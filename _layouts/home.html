@@ -15,22 +15,33 @@
   <meta property="og:description" content="{{ site.meta.fb_description }}" />
   <meta property="og:url" content="{{ site.domainroot }}" />
   <meta property="og:image" content="{{ site.domainroot }}/static/img/splash.jpg"/>
-
   <link rel="image_src" href="/static/img/splash.jpg" />
-  <link rel="stylesheet" href="/static/stylesheets/site.css" type="text/css" />
   <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
-</head>
-<body>
+  <link rel="stylesheet" href="/static/stylesheets/site.css" type="text/css" />
 
-{% include navbar.html %}
+</head>
+<body id="{{ page.class }}">
+
+{% if page.add_wrap %}
+
+{% include header.html %}
+<div class="container"><div class="row"><div class="col-sm-12">
+{{ content }}
+</div></div></div>
+{% include footer.html %}
+
+{% else %}
 
 {{ content }}
 
-{% include footer.html %}
+{% endif %}
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+
+
+<script src="/static/scripts/jquery.min.js"></script>
+<script src="/static/scripts/bootstrap.min.js"></script>
 
 </body>
 </html>
