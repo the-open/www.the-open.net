@@ -45,8 +45,14 @@ class: second
 </div>
 </section>
 <section class="coordinate bg-orange">
-  <h1 class="text-center bg-orange">Coordinating Multinational Campaigns For Global Impact</h1>
   <div id="map2"></div>
+  <div class="overlays">
+    <h1 class="text-center bg-orange">Coordinating Multinational Campaigns For Global Impact</h1>
+    <ul id="campaign-list" class="campaign-list">
+      <li><a data-campaign="refugees">Refugees welcome</a></li>
+      <li><a data-campaign="reef">Save the reef</a></li>
+    </ul>
+  </div>
 </section>
 <section class="enhance bg-green">
 <div class="container">
@@ -72,38 +78,50 @@ class: second
 
 </section>
 
-
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 <script>
 
-{% include orgs.html %}
+{% include orgs.js %}
+var world = {% include world.json %};
 
-var map1 = L.map('map1', {
+L.mapbox.accessToken = 'pk.eyJ1Ijoic25vb2siLCJhIjoiY2loN2Z4OXlhMHE4c3Vla3RiYjUzOHAxMSJ9.etz4qL0ffKTyPf2bFcHOIA';
+var map1 = L.mapbox.map('map1', 'mapbox.light', {
   scrollWheelZoom: false
 }).setView([20, 0], 2);
-var map2 = L.map('map2', {
-  scrollWheelZoom: false
-}).setView([20,0], 2);
-
-
-var mapboxAccessToken = 'pk.eyJ1Ijoic25vb2siLCJhIjoiY2loN2Z4OXlhMHE4c3Vla3RiYjUzOHAxMSJ9.etz4qL0ffKTyPf2bFcHOIA';
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
-  id: 'mapbox.light',
+var map2 = L.mapbox.map('map2', 'mapbox.streets', {
+  scrollWheelZoom: false,
   attribution: 'The OPEN'
-}).addTo(map1);
+}).setView([20, 0], 2);
 
-var markers = [].concat(orgs.core).concat(orgs.startup).concat(orgs.prelaunch);
-for (i=0; i < markers.length; i++) {
-  L.marker(markers[i]).addTo(map1);
-}
+var pins = L.mapbox.featureLayer().addTo(map1);
+pins.setGeoJSON(orgs);
+pins.on('click',function(e) {
+  map1.panTo(e.layer.getLatLng());
+});
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
-  id: 'mapbox.light',
-  attribution: 'The OPEN'
-}).addTo(map2); // @@TODO do both maps in one call?
+var sampleArray = ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ZAF','COL','VEN','ITA','ROU'];
+var campaigns = {
+  'refugees': ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ITA','ROU'],
+  'reef': ['GBR','DEU','AUS']
+};
+var campaignLayers = {};
+$(document).ready(function() {
+$.each(campaigns, function(name, list) {
+  campaignLayers[name] = L.mapbox.featureLayer(world, {
+    style: { weight: 0, fillOpacity: '0' },
+    filter: function(feature, layer) { if(campaigns[name].indexOf(feature.id) != -1) return true; return false;}
+  }).setZIndex(-1).addTo(map2);
+});
+$('#campaign-list > li > a').on('click', function(){
+  campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 1});
+});
+$('#campaign-list > li > a').on('blur', function(){
+  campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 0});
+});
 
-//L.geoJson(statesData).addTo(map2);
+});
+
 
 </script>
 <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
