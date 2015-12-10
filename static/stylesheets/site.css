@@ -1252,7 +1252,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, body#second section.more .feature {
   text-align: center; }
 
 .text-justify {
@@ -5981,28 +5981,26 @@ body#second .imagine {
   padding: 15px;
   left: 60px;
   right: 30px; }
+body#second #map1, body#second #map2 {
+  height: 100vh;
+  width: 100%; }
+  @media (min-width: 768px) {
+    body#second #map1, body#second #map2 {
+      height: 80vh; } }
 body#second section.overview {
   padding: 0;
   width: 100%;
-  height: 100vh;
   position: relative; }
   body#second section.overview .join-up {
     position: absolute;
     left: 10px;
     bottom: 10px; }
-  body#second section.overview #map1 {
-    height: 100vh;
-    width: 100%; }
 body#second h1 {
   padding: 10px 15px 15px; }
 body#second section.coordinate {
   padding: 0;
   width: 100%;
-  height: 100vh;
   position: relative; }
-  body#second section.coordinate #map2 {
-    height: 80vh;
-    width: 100%; }
   body#second section.coordinate .overlays {
     position: absolute;
     top: 30px;
@@ -6014,11 +6012,8 @@ body#second section.coordinate {
     width: 180px;
     position: absolute;
     bottom: 0; }
-    body#second section.coordinate .campaign-list li {
-      padding-top: 1.5em;
-      margin-bottom: 1.5em; }
-      .nav-pills body#second section.coordinate .campaign-list li a:hover {
-        background-color: #0090d0; }
+    .nav-pills body#second section.coordinate .campaign-list li a:hover {
+      background-color: #0090d0; }
 body#second section.enhance {
   min-height: 60vh;
   padding-top: 15vh;
@@ -6035,6 +6030,10 @@ body#second .bg-green {
   body#second .bg-green .btn-white {
     background-color: white;
     color: #829e23; }
+body#second .circle {
+  border-radius: 50%; }
+body#second section.more .feature h3 {
+  min-height: 60px; }
 body#second .bg-red {
   background-color: #930718; }
 body#second .bg-orange {

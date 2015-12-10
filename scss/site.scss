@@ -123,19 +123,21 @@ body#second {
     left: 60px;
     right: 30px;
   }
+  #map1, #map2 {
+    height: 100vh;
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+      height: 80vh;
+    }
+  }
   section.overview {
     padding: 0;
     width: 100%;
-    height: 100vh;
     position: relative;
     .join-up {
       position: absolute;
       left: 10px;
       bottom: 10px;
-    }
-    #map1 {
-      height: 100vh;
-      width: 100%;
     }
   }
   h1 {
@@ -144,12 +146,7 @@ body#second {
   section.coordinate {
     padding: 0;
     width: 100%;
-    height: 100vh;
     position: relative;
-    #map2 {
-      height: 80vh;
-      width: 100%;
-    }
     .overlays {
       position: absolute;
       top: 30px;
@@ -164,8 +161,6 @@ body#second {
       position: absolute;
       bottom: 0;
       li {
-        padding-top: 1.5em;
-        margin-bottom: 1.5em;
         .nav-pills & a:hover {
           background-color: $brand-primary;
         }
@@ -187,6 +182,13 @@ body#second {
       @extend .btn-success;
       background-color: white;
       color: darken($btn-success-bg, 10%);
+    }
+  }
+  .circle { border-radius: 50%; }
+  section.more {
+    .feature {
+      @extend .text-center;
+      h3 { min-height: 60px; }
     }
   }
   .bg-red {
