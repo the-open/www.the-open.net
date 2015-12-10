@@ -1,25 +1,25 @@
 /* 'core': [
-  [45.42152, -75.69719], //leadnow
-  [38.90719, -77.03687], //moveon
-  [51.50735, -0.12775], //38degrees
-  [52.52, 13.40495], //campact
-  [-35.28199, 149.12868] //getup
+  [45.42152, -75.69719], //leadnow CAN
+  [38.90719, -77.03687], //moveon UAS
+  [51.50735, -0.12775], //38degrees GBR
+  [52.52, 13.40495], //campact DEU
+  [-35.28199, 149.12868] //getup AUS
 ],
 'startup': [
-  [-41.28646, 174.77623], //actionstation
-  [53.3498, -6.2603], //uplift
-  [46.94797, 7.44744], //operationlibero
-  [52.22967, 21.01222], //akcjademokracja
-  [44.42676, 26.10253], //de-clic
-  [-26.2041, 28.0473], //amandla.mobi
-  [59.32932, 18.06858], //skiftet
-  [48.20817, 16.37381] //aufstehn
+  [-41.28646, 174.77623], //actionstation NZL
+  [53.3498, -6.2603], //uplift IRL
+  [46.94797, 7.44744], //operationlibero CHE
+  [52.22967, 21.01222], //akcjademokracja POL
+  [44.42676, 26.10253], //de-clic ROU
+  [-26.2041, 28.0473], //amandla.mobi ZAF
+  [59.32932, 18.06858], //skiftet SWE
+  [48.20817, 16.37381] //aufstehn AUT
 
 ],
 'prelaunch': [
-  [41.87241, 12.48022], //progressi
-  [4.71098, -74.07209], //unetuvoz
-  [31.76831, 35.2137] //zazim
+  [41.87241, 12.48022], //progressi ITA
+  [4.71098, -74.07209], //unetuvoz COL
+  [31.76831, 35.2137] //zazim ISR
 ]
 */
 

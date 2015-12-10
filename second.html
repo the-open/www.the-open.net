@@ -48,9 +48,11 @@ class: second
   <div id="map2"></div>
   <div class="overlays">
     <h1 class="text-center bg-orange">Coordinating Multinational Campaigns For Global Impact</h1>
-    <ul id="campaign-list" class="campaign-list">
+    <ul id="campaign-list" class="nav nav-pills nav-stacked campaign-list">
       <li><a data-campaign="refugees">Refugees welcome</a></li>
       <li><a data-campaign="reef">Save the reef</a></li>
+      <li><a data-campaign="tpp">Stop the TPP</a></li>
+      <li><a data-campaign="ttip">Stop TTIP</a></li>
     </ul>
   </div>
 </section>
@@ -77,7 +79,13 @@ class: second
 </div>
 
 </section>
-
+<section>
+  more sections:
+  featured news
+  news news
+  facebook feed
+  twitter feed
+</section>
 <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 <script>
@@ -102,21 +110,32 @@ pins.on('click',function(e) {
 
 var sampleArray = ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ZAF','COL','VEN','ITA','ROU'];
 var campaigns = {
-  'refugees': ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ITA','ROU'],
-  'reef': ['GBR','DEU','AUS']
+  'refugees': {
+    'list': ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ITA','ROU']
+  },
+  'reef': {
+    'list': ['GBR','DEU','AUS']
+  },
+  'tpp': {
+    'list': ['USA','CAN','AUS','NZL']
+  },
+  'ttip': {
+    'list': ['USA','GBR','DEU','IRL','POL','AUT','SWE','CHE','ITA','ROU']
+  }
 };
 var campaignLayers = {};
 $(document).ready(function() {
 $.each(campaigns, function(name, list) {
   campaignLayers[name] = L.mapbox.featureLayer(world, {
-    style: { weight: 0, fillOpacity: '0' },
-    filter: function(feature, layer) { if(campaigns[name].indexOf(feature.id) != -1) return true; return false;}
+    style: { weight: 2, fillOpacity: '0' },
+    //className: 'country-tpp',
+    filter: function(feature, layer) { if(campaigns[name].list.indexOf(feature.id) != -1) return true; return false;}
   }).setZIndex(-1).addTo(map2);
 });
-$('#campaign-list > li > a').on('click', function(){
+$('#campaign-list > li > a').on('mouseover', function(){
   campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 1});
 });
-$('#campaign-list > li > a').on('blur', function(){
+$('#campaign-list > li > a').on('mouseout', function(){
   campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 0});
 });
 
