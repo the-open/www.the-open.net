@@ -4,8 +4,6 @@ class: second
 ---
 
 <section id="first">
-<span class="img-cover"></span>
-<span class="img-filter"></span>
 {% include header.html %}
 
 <div class="container">
@@ -33,6 +31,7 @@ class: second
 </div>
 </section>
 
+<a name="connect"></a>
 <section class="connect bg-primary">
 <div class="container">
   <div class="row">
@@ -44,6 +43,8 @@ class: second
   </div>
 </div>
 </section>
+
+<a name="coordinate"></a>
 <section class="coordinate bg-orange">
   <div id="map2"></div>
   <div class="overlays">
@@ -56,6 +57,8 @@ class: second
     </ul>
   </div>
 </section>
+
+<a name="enhance"></a>
 <section class="enhance bg-green">
 <div class="container">
   <div class="row">
@@ -66,8 +69,9 @@ class: second
     </div>
   </div>
 </div>
-
 </section>
+
+<a name="grow"></a>
 <section class="grow">
 <div class="container">
   <div class="row">
@@ -79,7 +83,9 @@ class: second
 </div>
 
 </section>
-<section class="more">
+
+<!--<a name="more"></a>
+section class="more">
 <div class="container">
   <div class="row">
     <h1 class="text-center">Read More About OPEN</h1>
@@ -106,13 +112,16 @@ class: second
     </div>
   </div>
 </div>
-</section>
+</section -->
 <section>
   more sections:
-  featured news
-  news news
-  facebook feed
-  twitter feed
+  <ul>
+    <li>our own newsletter</li>
+    <li>featured news</li>
+    <li>news news</li>
+    <li>facebook feed</li>
+    <li>twitter feed</li>
+  </ul>
 </section>
 <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
@@ -122,7 +131,7 @@ class: second
 var world = {% include world.json %};
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic25vb2siLCJhIjoiY2loN2Z4OXlhMHE4c3Vla3RiYjUzOHAxMSJ9.etz4qL0ffKTyPf2bFcHOIA';
-var map1 = L.mapbox.map('map1', 'mapbox.light', {
+var map1 = L.mapbox.map('map1', 'mapbox.streets', {
   scrollWheelZoom: false
 }).setView([20, 0], 2);
 var map2 = L.mapbox.map('map2', 'mapbox.streets', {
@@ -172,7 +181,3 @@ $('#campaign-list > li > a').on('mouseout', function(){
 
 </script>
 <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-{% include mailchimp2.html %}
-
-{% include footer.html %}

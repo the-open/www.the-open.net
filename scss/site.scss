@@ -4,19 +4,49 @@ $brand-warning: rgb(216,96,39);
 $brand-success: rgb(164,200,44);
 $brand-info: rgb(0,144,208);
 $brand-primary: $brand-info;
+$well-border: 1px solid #e3e3e3;
 @import 'variables';
 @import 'bootstrap';
 @import 'bootswatch';
 
 #mc_embed_signup input, input.btn, #mce-responses .response { margin-bottom: 1em; }
 
-body > section, body > footer, body > header {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 1px solid $hr-border;
+body > section, body > header {
+  padding-top: 3.2vw;
+  padding-bottom: 3.2vw;
+  border-top: $well-border;
 }
-header .brand {
-  max-height: 80px;
+body > footer {
+  background-color: #f5f5f5;
+  border: 0 solid transparent;
+  border-top: $well-border;
+  padding: 4vw;
+  margin: 4vw 0 0 0;
+  border-radius: 0;
+  ul.list-unstyled>li {
+    &>a {
+      @extend h4;
+      font-weight: 300;
+      @extend .text-muted;
+    }
+    &:first-child > a { font-weight: 700; }
+  }
+  p.copyright {
+    @extend h5, .text-muted;
+    padding-top: 2em; padding-bottom: 2em;
+  }
+}
+header {
+  .brand {
+    max-height: 80px;
+  }
+  nav ul.navbar-nav > li > a {
+    border: 1px solid transparent;
+  }
+  nav ul.navbar-nav > li > a:hover, nav ul.navbar-nav > li > a:focus {
+    background-color: transparent !important;
+    border: 1px solid $gray-dark;
+  }
 }
 nav.navbar {
   margin-bottom: 0;
@@ -52,8 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 0;
   }
   header .brand { max-height: 62.84px; }
-  section, footer { padding-top: 20px; padding-bottom: 20px; }
-  header { padding-top: 20px; padding-bottom: 0; }
+  section { padding-top: 20px; padding-bottom: 20px; }
   .navbar-nav > li > a.btn {
     padding-top: 10px;
     margin-top: 9.5px;
@@ -86,35 +115,38 @@ h1, h2, h3, h4, h5, h6 {
 .big-learn-more-button {
   margin-top: 120px; margin-bottom: 80px;
 }
-
+.modal-footer .btn {
+  margin-bottom: 0;
+}
+nav.navbar-default {
+  background-color: transparent;
+}
+main {
+  margin: 4vw 0;
+}
+section#first {
+  position: relative;
+  border: 0 solid transparent;
+  span.img-filter {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 0;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+  }
+  span.img-cover {
+    background: url('/static/img/dots-background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    -webkit-filter: brightness(1.5) grayscale(50%);
+    -moz-filter: brightness(1.5) grayscale(50%);
+    -o-filter: brightness(1.5) grayscale(50%);
+    -ms-filter: brightness(1.5) grayscale(50%);
+    filter: brightness(1.5) grayscale(50%);
+  }
+}
 body#second {
-  .modal-footer .btn {
-    margin-bottom: 0;
-  }
-  nav.navbar-default {
-    background-color: transparent;
-  }
-  section#first {
-    position: relative;
-    span.img-filter {
-      background-color: rgba(255, 255, 255, 0.7);
-      z-index: 0;
-      position: absolute;
-      left: 0; right: 0; top: 0; bottom: 0;
-    }
-    span.img-cover {
-      background: url('/static/img/opensplash.jpg') no-repeat center center;
-      background-size: cover;
-      z-index: -1;
-      position: absolute;
-      left: 0; right: 0; top: 0; bottom: 0;
-      -webkit-filter: brightness(1.5) grayscale(50%);
-      -moz-filter: brightness(1.5) grayscale(50%);
-      -o-filter: brightness(1.5) grayscale(50%);
-      -ms-filter: brightness(1.5) grayscale(50%);
-      filter: brightness(1.5) grayscale(50%);
-    }
-  }
   .imagine {
     position: absolute;
     top: 10px;
@@ -141,7 +173,7 @@ body#second {
     }
   }
   h1 {
-    padding: 10px 15px 15px;
+    padding: 10px 0 15px;
   }
   section.coordinate {
     padding: 0;
@@ -191,6 +223,10 @@ body#second {
       h3 { min-height: 60px; }
     }
   }
+  h1.bg-red, h1.bg-orange {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   .bg-red {
     @extend .bg-primary;
     @extend .bg-danger;
@@ -199,7 +235,6 @@ body#second {
   .bg-orange {
     @extend .bg-primary;
     @extend .bg-warning;
-    /*background-color: darken($btn-warning-border, 12%);*/
     background-color: $btn-warning-border;
   }
   .h3-sized { font-size: $font-size-h3; }

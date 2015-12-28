@@ -1,0 +1,72 @@
+---
+layout: home
+class: second
+sidebar: true
+---
+<section id="first">
+{% include header.html %}
+</section>
+
+<section>
+  <div class="container">
+  <a name="feeds"></a>
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+      <h1>Keep up with these incredible organisations and their campaigns.</h1>
+      <div id="fb-root"></div>
+
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '207341522943149',
+            //pageId     : '869655296485635',
+            xfbml      : true,
+            version    : 'v2.5'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <div class="fb-page" data-href="https://www.facebook.com/progressiveengegement/"
+        data-width="540"
+        data-tabs="timeline"
+        data-small-header="true"
+        data-adapt-container-width="true"
+        data-hide-cover="true"
+        data-show-facepile="false">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/progressiveengegement/">
+            <a href="https://www.facebook.com/progressiveengegement/">The OPEN</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="tw-feed">
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/michaelsnook/lists/open-network" data-widget-id="661531868307689472">Tweets from https://twitter.com/michaelsnook/lists/open-network</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div><!-- /.row -->
+
+  <a name="about"></a>
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+      <h1>About our member organisations</h1>
+    </div>
+  </div>
+
+  <a name="features"></a>
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+      <h1>Feature stories about the groups</h1>
+    </div>
+  </div>
+
+  </div>
+</section>

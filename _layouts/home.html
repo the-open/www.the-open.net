@@ -26,12 +26,16 @@
 <body id="{{ page.class }}">
 
 {% if page.add_wrap %}
-
+<section id="first">
 {% include header.html %}
+</section>
+<section>
 <div class="container"><div class="row"><div class="col-sm-12">
-{{ content }}
+  <main role="document">
+    {{ content }}
+  </main>
 </div></div></div>
-{% include footer.html %}
+</section>
 
 {% else %}
 
@@ -39,9 +43,9 @@
 
 {% endif %}
 
+{% include mailchimp2.html %}
 
-
-
+{% include footer.html %}
 
 </body>
 </html>
