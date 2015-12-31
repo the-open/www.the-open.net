@@ -58,6 +58,24 @@ sidebar: true
   <div class="row">
     <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
       <h1>About our member organisations</h1>
+      {% for org in site.orgs %}
+        {% cycle '','<div class="row">' %}
+
+          <div class="col-sm-6 col-lg-6">
+          <a name="{{ org.slug }}"></a>
+          {% if org.logo %}<img class="img-responsive" src="{{ org.logo }}" alt="{{ org.title }}" />{% endif %}
+          <h3>{{ org.title }}
+            <span class="small">
+              <a href="{{ org.url }}" title="org.title">{{ org.url }}</a>
+            </span>
+          </h3>
+          <p>{{ org.description|striptags }}</p>
+        </div>
+        {% if orgs.size | modulo:2 == 0 %}
+      </div>
+        {% endif %}
+        {% cycle '','</div>' %}
+      {% endfor %}
     </div>
   </div>
 
