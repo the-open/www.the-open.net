@@ -4,7 +4,7 @@ $brand-warning: rgb(216,96,39);
 $brand-success: rgb(164,200,44);
 $brand-info: rgb(0,144,208);
 $brand-primary: $brand-info;
-$well-border: 1px solid #e3e3e3;
+$well-border-stroke: 1px solid #e3e3e3;
 @import 'variables';
 @import 'bootstrap';
 @import 'bootswatch';
@@ -14,12 +14,12 @@ $well-border: 1px solid #e3e3e3;
 body > section, body > header {
   padding-top: 3.2vw;
   padding-bottom: 3.2vw;
-  border-top: $well-border;
+  border-top: $well-border-stroke;
 }
 body > footer {
   background-color: #f5f5f5;
   border: 0 solid transparent;
-  border-top: $well-border;
+  border-top: $well-border-stroke;
   padding: 4vw;
   margin: 4vw 0 0 0;
   border-radius: 0;
@@ -36,6 +36,18 @@ body > footer {
     padding-top: 2em; padding-bottom: 2em;
   }
 }
+#toc {
+  ul { @extend .list-unstyled; }
+  &.affix { top: 40px; }
+  &.affix-top { top: 10px; }
+  .toc-h1 { font-size: floor(($font-size-h1 * 0.7)); }
+  .toc-h2 { font-size: floor(($font-size-h2 * 0.7)); }
+  .toc-h3 { font-size: floor(($font-size-h3 * 0.7)); margin-left: 10px; }
+  .toc-h4 { font-size: floor(($font-size-h4 * 0.7)); margin-right: 15px; }
+  .toc-h5 { font-size: floor(($font-size-h5 * 0.7)); margin-right: 15px; }
+  .toc-h6 { font-size: floor(($font-size-h6 * 0.7)); margin-right: 15px; }
+}
+
 header {
   .brand {
     max-height: 80px;

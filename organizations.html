@@ -1,39 +1,12 @@
 ---
-layout: home
+layout: sidebar
 class: second
-sidebar: true
+add_facebook: true
+title: Our Member Organisations
 ---
-<section id="first">
-{% include header.html %}
-</section>
 
-<section>
-  <div class="container">
-  <a name="feeds"></a>
-  <div class="row">
-    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-      <h1>Keep up with these incredible organisations and their campaigns.</h1>
-      <div id="fb-root"></div>
-
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '207341522943149',
-            //pageId     : '869655296485635',
-            xfbml      : true,
-            version    : 'v2.5'
-          });
-        };
-
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "//connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
-
+      <a name="feed"></a>
+      <h2 title="Member organisation campaigns">Keep up with these incredible organisations and their campaigns.</h2>
       <div class="fb-page" data-href="https://www.facebook.com/progressiveengegement/"
         data-width="540"
         data-tabs="timeline"
@@ -51,40 +24,25 @@ sidebar: true
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/michaelsnook/lists/open-network" data-widget-id="661531868307689472">Tweets from https://twitter.com/michaelsnook/lists/open-network</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
-    </div>
-  </div><!-- /.row -->
-
-  <a name="about"></a>
-  <div class="row">
-    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-      <h1>About our member organisations</h1>
+      <a name="about"></a>
+      <h2>About our member organisations</h2>
       {% for org in site.orgs %}
-        {% cycle '','<div class="row">' %}
-
+        {% cycle '<div class="row">','' %}
           <div class="col-sm-6 col-lg-6">
           <a name="{{ org.slug }}"></a>
           {% if org.logo %}<img class="img-responsive" src="{{ org.logo }}" alt="{{ org.title }}" />{% endif %}
           <h3>{{ org.title }}
             <span class="small">
-              <a href="{{ org.url }}" title="org.title">{{ org.url }}</a>
+              <a href="{{ org.url }}" title="{{ org.title }}">{{ org.url }}</a>
             </span>
           </h3>
           <p>{{ org.description|striptags }}</p>
         </div>
-        {% if orgs.size | modulo:2 == 0 %}
-      </div>
-        {% endif %}
-        {% cycle '','</div>' %}
+
+      {% cycle '','</div><!-- row -->' %}
       {% endfor %}
-    </div>
-  </div>
+      {% if site.orgs | size | modulo: 2 %}</div><!-- row -->{% endif %}
 
-  <a name="features"></a>
-  <div class="row">
-    <div class="col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-      <h1>Feature stories about the groups</h1>
-    </div>
-  </div>
+      <a name="features"></a>
 
-  </div>
-</section>
+      <h2>Feature stories about the groups</h2>
