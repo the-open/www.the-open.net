@@ -11,7 +11,7 @@ layout: home
         <h1>{{ page.title }}</h1>
         {{ content }}
       </div>
-      <div id="sidebar" class="col-md-4 col-sm-12 col-lg-3">
+      <div id="sidebar" class="col-md-4 col-sm-12 col-lg-3 hidden-sm hidden-xs">
         <div id="toc"></div>
       </div>
     </div>
@@ -32,7 +32,7 @@ $(document).ready(function() {
     'activeClass': 'toc-active',
     'onHighlight': function(el) {
       var $ul = $('#toc > ul');
-      
+
     },
     'highlightOnScroll': true, //add class to heading that is currently in focus
     'highlightOffset': 100, //offset to trigger the next headline

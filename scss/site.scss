@@ -4,16 +4,20 @@ $brand-warning: rgb(216,96,39);
 $brand-success: rgb(164,200,44);
 $brand-info: rgb(0,144,208);
 $brand-primary: $brand-info;
-$well-border-stroke: 1px solid #e3e3e3;
+$gray-lighter: #E3E3E3;
+$well-border-stroke: 1px solid $gray-lighter;
 @import 'variables';
 @import 'bootstrap';
 @import 'bootswatch';
+@import 'flags';
 
 #mc_embed_signup input, input.btn, #mce-responses .response { margin-bottom: 1em; }
 body { position: relative; } // for scrollspy
 .show-now { background-color: green !important; }
 .hide-sibs { background-color: gray !important; }
-.org-logo { margin-left: 15px; margin-bottom: 10px; max-height: 80px; max-width: 240px; }
+.org-logo { margin: 1em 0 10px 15px; max-height: 80px; max-width: 200px; }
+
+span.flag:before { content: " "; }
 h1 { color: $gray; } h3 { color: $gray-dark; }
 body > section, body > header {
   padding-top: 3.2vw;
