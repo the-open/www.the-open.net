@@ -13,7 +13,7 @@ $well-border-stroke: 1px solid #e3e3e3;
 body { position: relative; } // for scrollspy
 .show-now { background-color: green !important; }
 .hide-sibs { background-color: gray !important; }
-.org-logo { margin-left: 15px; margin-bottom: 10px; }
+.org-logo { margin-left: 15px; margin-bottom: 10px; max-height: 80px; max-width: 240px; }
 h1 { color: $gray; } h3 { color: $gray-dark; }
 body > section, body > header {
   padding-top: 3.2vw;

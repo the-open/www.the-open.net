@@ -60,6 +60,8 @@ staff:
 orgs:
 - slug: leadnow
   code: CAN
+  code2:
+  founded:
   url: http://www.leadnow.ca/
   logo: /static/img/leadnow.png
   coordinates: '[-123.1207, 49.2827]'
@@ -68,14 +70,18 @@ orgs:
   category: core
 - slug: moveon
   code: USA
+  code2:
+  founded:
   url: http://www.moveon.org/
-  logo: https://s3.amazonaws.com/s3.moveon.org/moui/img/assets/moveon-demaction.svg
+  logo: /static/img/moveon.svg
   coordinates: '[-98.5, 39.8]'
   title: MoveOn
   description: '<a target="_blank" href="http://www.moveon.org/">MoveOn.org</a> is the oldest and largest of the groups in the OPEN network. Founded in 1998, and with over 8 million members, they are the flagship organization among the robust American ecosystem of online, independent left organizations in America. MoveOn was one of the leading voices in opposing the Iraq war, passing ObamaCare, and stopping a senseless war with Iran.'
   category: core
 - slug: 38degrees
   code: GBR
+  code2:
+  founded:
   url: http://38degrees.org.uk/
   logo: /static/img/38degrees.png
   coordinates: '[-0.12775, 51.50735]'
@@ -84,14 +90,18 @@ orgs:
   category: core
 - slug: campact
   code: DEU
+  code2:
+  founded:
   url: http://campact.de/
-  logo: https://www.campact.de/s/img/logo.png
+  logo: /static/img/campact.png
   coordinates: '[13.40495, 52.52]'
   title: Campact
   description: '<a target="_blank" href="http://campact.de/">Campact.de</a> was the first organisation in the network to begin without any contact with the others, only linking up in 2013 when OPEN was founded. Though they are a multi-issue organisation like all the rest, they focus heavily on anti-coal, anti-nuclear, anti-GMO campaigns, which has led them to become one of Europe&rsquo;s leading voices against bad trade deals, and a key part of coordinating transnational campaigns.'
   category: core
 - slug: getup
   code: AUS
+  code2:
+  founded:
   url: http://getup.org.au/
   logo: /static/img/getup.png
   coordinates: '[149.12868, -35.28199]'
@@ -100,6 +110,8 @@ orgs:
   category: core
 - slug: actionstation
   code: NZL
+  code2:
+  founded:
   url: http://actionstation.org.nz/
   logo:
   coordinates: '[174.77623, -41.28646]'
@@ -108,6 +120,8 @@ orgs:
   category: startup
 - slug: uplift
   code: IRL
+  code2:
+  founded:
   url: http://uplift.ie/
   logo:
   coordinates: '[-6.2603, 53.3498]'
@@ -116,6 +130,8 @@ orgs:
   category: startup
 - slug: operationlibero
   code: CHE
+  code2:
+  founded:
   url: http://www.operation-libero.ch/
   logo:
   coordinates: '[7.44744, 46.94797]'
@@ -124,6 +140,8 @@ orgs:
   category: startup
 - slug: akcjademokracja
   code: POL
+  code2:
+  founded:
   url: http://www.akcjademokracja.pl/
   logo:
   coordinates: '[21.01222, 52.22967]'
@@ -132,6 +150,8 @@ orgs:
   category: startup
 - slug: declic
   code: ROU
+  code2:
+  founded:
   url: http://www.de-clic.ro/
   logo:
   coordinates: '[26.10253, 44.42676]'
@@ -140,6 +160,8 @@ orgs:
   category: startup
 - slug: amandla
   code: ZAF
+  code2:
+  founded:
   url: http://www.amandla.mobi/
   logo:
   coordinates: '[28.0473,-26.2041]'
@@ -148,6 +170,8 @@ orgs:
   category: startup
 - slug: skiftet
   code: SWE
+  code2:
+  founded:
   url: http://www.skiftet.org/
   logo: #http://skiftet.org/wp-content/themes/skiftet/library/style/images/logo_3.svg
   coordinates: '[18.06858, 59.32932]'
@@ -156,6 +180,8 @@ orgs:
   category: startup
 - slug: aufstehn
   code: AUT
+  code2:
+  founded:
   url: http://www.aufstehn.at/
   logo: http://www.aufstehn.at/sites/aufstehn/themes/aufstehn/logo.png
   coordinates: '[16.37381, 48.20817]'
@@ -164,6 +190,8 @@ orgs:
   category: startup
 - slug: progressi
   code: ITA
+  code2:
+  founded:
   url: http://www.progressi.org/
   logo: https://d8s293fyljwh4.cloudfront.net/organisation_logos/logos/88/2015-09-21%2011:41:20%20-0400/progressi_logo_21.png
   coordinates: '[12.48022, 41.87241]'
@@ -172,20 +200,15 @@ orgs:
   category: startup
 - slug: zazim
   code: ISR
+  code2:
+  founded:
   url: http://www.zazim.org.il/
   logo: http://zazimedia.s3.amazonaws.com/wp-content/uploads/20151230124600/header_he.png
   coordinates: '[35.2137, 31.76831]'
   title: Zazim
   description: '<a target="_blank" href="http://www.zazim.org.il/">Zazim.org.il</a> launched in the final days of 2015 with a campaign against new anti-muslim educational policies and textbooks. They operate in Hebrew and Arabic, and while Zazim is a multi-issue organisation, they understand that systemic racism and the occupation play a central roll in skewing or derailing nearly every other political debate in the country, and work to combat these problems in every campaign they run.'
   category: startup
-#- slug: unetuvoz
-#  code: COL
-#  url:
-#  logo:
-#  coordinates: '[-74.07209, 4.71098]'
-#  title: UneTuVoz
-#  description: '<a target="_blank" href="http://www.UneTuVoz.co/">UneTuVoz</a>'
-#  category: prelaunch
+
 
 exclude:
  - CNAME
