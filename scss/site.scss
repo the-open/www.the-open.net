@@ -10,7 +10,9 @@ $well-border-stroke: 1px solid #e3e3e3;
 @import 'bootswatch';
 
 #mc_embed_signup input, input.btn, #mce-responses .response { margin-bottom: 1em; }
-
+body { position: relative; } // for scrollspy
+.show-now { background-color: green !important; }
+.hide-sibs { background-color: gray !important; }
 body > section, body > header {
   padding-top: 3.2vw;
   padding-bottom: 3.2vw;
@@ -36,16 +38,27 @@ body > footer {
     padding-top: 2em; padding-bottom: 2em;
   }
 }
+#sidebar {
+  display: flex;
+  position: static;
+}
 #toc {
-  ul { @extend .list-unstyled; }
-  &.affix { top: 40px; }
-  &.affix-top { top: 10px; }
-  .toc-h1 { font-size: floor(($font-size-h1 * 0.7)); }
-  .toc-h2 { font-size: floor(($font-size-h2 * 0.7)); }
-  .toc-h3 { font-size: floor(($font-size-h3 * 0.7)); margin-left: 10px; }
-  .toc-h4 { font-size: floor(($font-size-h4 * 0.7)); margin-right: 15px; }
-  .toc-h5 { font-size: floor(($font-size-h5 * 0.7)); margin-right: 15px; }
-  .toc-h6 { font-size: floor(($font-size-h6 * 0.7)); margin-right: 15px; }
+  position: relative;
+  &.affix { position: fixed; top: 40px; }
+  .nav {
+    li { line-height: 1.28em; }
+    li+li { margin-top: 4px; }
+    li > a { padding-top: 0; padding-right: 0; padding-bottom: 0; }
+    & > .toc-h1 { font-size: floor(($font-size-h1 * 0.7)); & > a { padding-left: 3px; }}
+    & > .toc-h2 { font-size: floor(($font-size-h2 * 0.6)); & > a { padding-left: 5px; }}
+    & > .toc-h3 { font-size: floor(($font-size-h3 * 0.6)); & > a { padding-left: 10px; }}
+    & > .toc-h4 { font-size: floor(($font-size-h4 * 0.8)); & > a { padding-left: 15px; }}
+    & > .toc-h5 { font-size: floor(($font-size-h5 * 0.9)); & > a { padding-left: 15px; }}
+    & > .toc-h6 { font-size: floor(($font-size-h6 * 1.0)); & > a { padding-left: 15px; }}
+    li.toc-active {
+      border-left: 5px solid $brand-primary;
+    }
+  }
 }
 
 header {
@@ -159,14 +172,6 @@ section#first {
   }
 }
 body#second {
-  .imagine {
-    position: absolute;
-    top: 10px;
-    background: rgba(255,255,255,0.85);
-    padding: 15px;
-    left: 60px;
-    right: 30px;
-  }
   #map1, #map2 {
     height: 100vh;
     width: 100%;
@@ -209,7 +214,6 @@ body#second {
           background-color: $brand-primary;
         }
       }
-
     }
   }
   section.enhance {
@@ -228,7 +232,6 @@ body#second {
       color: darken($btn-success-bg, 10%);
     }
   }
-  .circle { border-radius: 50%; }
   section.more {
     .feature {
       @extend .text-center;

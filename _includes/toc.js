@@ -5,55 +5,7 @@
  * copyright Greg Allen 2014
  * MIT License
 */
-/*!
- * smooth-scroller - Javascript lib to handle smooth scrolling
- * v0.1.2
- * https://github.com/firstandthird/smooth-scroller
- * copyright First+Third 2014
- * MIT License
-*/
-//smooth-scroller.js
 
-(function($) {
-  $.fn.smoothScroller = function(options) {
-    options = $.extend({}, $.fn.smoothScroller.defaults, options);
-    var el = $(this);
-
-    $(options.scrollEl).animate({
-      scrollTop: el.offset().top - $(options.scrollEl).offset().top - options.offset
-    }, options.speed, options.ease, function() {
-      var hash = el.attr('id');
-
-      if(hash.length) {
-        if(history.pushState) {
-          history.pushState(null, null, '#' + hash);
-        } else {
-          document.location.hash = hash;
-        }
-      }
-
-      el.trigger('smoothScrollerComplete');
-    });
-
-    return this;
-  };
-
-  $.fn.smoothScroller.defaults = {
-    speed: 400,
-    ease: 'swing',
-    scrollEl: 'body,html',
-    offset: 0
-  };
-
-  $('body').on('click', '[data-smoothscroller]', function(e) {
-    e.preventDefault();
-    var href = $(this).attr('href');
-
-    if(href.indexOf('#') === 0) {
-      $(href).smoothScroller();
-    }
-  });
-}(jQuery));
 
 (function($) {
 var verboseIdCache = {};
@@ -67,12 +19,6 @@ $.fn.toc = function(options) {
   var activeClassName = opts.activeClass;
 
   var scrollTo = function(e, callback) {
-    if (opts.smoothScrolling && typeof opts.smoothScrolling === 'function') {
-      e.preventDefault();
-      var elScrollTo = $(e.target).attr('href');
-
-      opts.smoothScrolling(elScrollTo, opts, callback);
-    }
     $('li', self).removeClass(activeClassName);
     $(e.target).parent().addClass(activeClassName);
   };
@@ -98,7 +44,7 @@ $.fn.toc = function(options) {
       $('li', self).removeClass(activeClassName);
       highlighted = $('li:eq('+ index +')', self).addClass(activeClassName);
       opts.onHighlight(highlighted);
-    }, 50);
+    }, opts.timeout);
   };
   if (opts.highlightOnScroll) {
     $(window).bind('scroll', highlightOnScroll);
@@ -148,19 +94,13 @@ jQuery.fn.toc.defaults = {
   container: 'body',
   listType: '<ul/>',
   selectors: 'h1,h2,h3,h4',
-  smoothScrolling: function(target, options, callback) {
-    $(target).smoothScroller({
-      offset: options.scrollToOffset
-    }).on('smoothScrollerComplete', function() {
-      callback();
-    });
-  },
   scrollToOffset: 0,
   prefix: 'toc',
   activeClass: 'toc-active',
   onHighlight: function() {},
   highlightOnScroll: true,
-  highlightOffset: 100,
+  highlightOffset: 50,
+  timeout: 50, // scroll delay before recalculating highlight
   anchorName: function(i, heading, prefix) {
     if(heading.id.length) {
       return heading.id;

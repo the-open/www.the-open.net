@@ -4,45 +4,140 @@ class: second
 add_facebook: true
 title: Our Member Organisations
 ---
+<a name="about"></a>
+<h2>Who They Are</h2>
+{% for org in site.orgs %}
+  {% cycle '<div class="row">','' %}
+    <div class="col-sm-6 col-lg-6">
+    <a name="{{ org.slug }}"></a>
+    {% if org.logo %}<img class="img-responsive" src="{{ org.logo }}" alt="{{ org.title }}" />{% endif %}
+    <h3>{{ org.title }}
+      <span class="small">
+        <a href="{{ org.url }}" title="{{ org.title }}">{{ org.url }}</a>
+      </span>
+    </h3>
+    <p>{{ org.description|striptags }}</p>
+  </div>
+{% cycle '','</div><!-- row -->' %}
+{% endfor %}
+{% if site.orgs | size | modulo: 2 %}</div><!-- row -->{% endif %}
 
-      <a name="feed"></a>
-      <h2 title="Member organisation campaigns">Keep up with these incredible organisations and their campaigns.</h2>
-      <div class="fb-page" data-href="https://www.facebook.com/progressiveengegement/"
-        data-width="540"
-        data-tabs="timeline"
-        data-small-header="true"
-        data-adapt-container-width="true"
-        data-hide-cover="true"
-        data-show-facepile="false">
-        <div class="fb-xfbml-parse-ignore">
-          <blockquote cite="https://www.facebook.com/progressiveengegement/">
-            <a href="https://www.facebook.com/progressiveengegement/">The OPEN</a>
-          </blockquote>
-        </div>
+<hr>
+<h2>Defining an OPEN Organisation</h2>
+<h3>Progressive</h3>
+<p>OPEN members move society
+towards greater economic and social equality,
+environmental sustainability, peaceful coexistence,
+and democratic freedom. OPEN groups
+do not demand adherence from all members
+on all points. They weave a values-coherent
+community through many different topical
+campaign opportunities, allowing campaigns to
+cross-pollinate organically.
+<h3>People-Powered</h3>
+<p>OPEN pursues an outside power
+theory of change, which primarily relies on the
+collective force of large-scale citizen participation
+to move public and private sector decision-makers
+towards just outcomes. This is distinguished from
+an inside access theory of change, which relies
+on a special set of inside actors to win change
+through elite channels. Both theories have their
+place, but the network chooses to prioritize the
+former because it is more durable over time, and
+it more closely matches OPEN’s values regarding
+power distribution in a democracy.
+<h3>Member-Led</h3>
+<p> OPEN organization’s agendas are
+set by the members themselves. Organizations
+achieve this though rigorous testing, response
+benchmarks, polling, voting, and anecdotal
+inputs. Member participation and the cultivation
+of a strong member experience generate the
+level of affinity and participation necessary. Many
+groups also equip members to start and run their
+own campaigns, and then assign organization
+resources to promote those campaigns.</p>
+<h3>Multi-Issue</h3>
+<p> People and nations, unlike most
+organizations, focus on and care about many
+different issues based on their set of values.
+While people choose some issues as the most
+important, the daily news presents them with a
+range of topics that will inflame their support
+or ire. The energy produced in response is what
+OPEN organizations engage in order to grow
+and to create change wherever change is most
+urgent and possible. OPEN organizations bring a
+surge of power to single-issue campaigns when it
+matters most.</p>
+<h3>Nimble</h3>
+<p>When news stories, upcoming legislative
+decisions, or other events make action urgent,
+OPEN groups give their members a means to
+take immediate action. Groups must be decisive
+and act quickly. OPEN’s member organizations
+therefore operate in a low-bureaucracy, highempowerment
+management model.</p>
+<h3>Full-Spectrum</h3>
+<p> Full-spectrum campaigning
+allows members to put all of their assets to
+work for the social and political change they
+believe in. These include opinions, talents, social
+networks, specific knowledge, votes, and material
+resources, including money. OPEN organizations
+use digital means such as email, web platforms,
+social media, and SMS to present information
+and engagement opportunities. However, their
+tactics frequently draw people into offline action.</p>
+<h3>Independent</h3>
+<p> OPEN groups remain fiercely
+independent from any political party. Praise or
+criticism, support or opposition, are granted
+purely on the basis of issue performance.
+This independence also means that OPEN
+organizations must ultimately be financially
+beholden only to the members themselves
+through small individual contributions. All five
+founding OPEN organizations achieved this mark
+within 3.5 years of launch.</p>
+<h3>Digital</h3>
+<p> OPEN organizations communicate and
+organize digitally because digital technology
+allows for accessible, scalable, and rapid
+engagement. They prioritize investing in the
+best possible platforms and innovation. At the
+same time, each new tool is evaluated from the
+perspective of strategic utility and accessibility to
+individual members, who are generally not early
+adopters. </p>
+
+<hr>
+<a name="feed"></a>
+<h2>What They&rsquo;re Doing Now</h2>
+<div class="row">
+  <div class="col-md-6">
+    <div class="fb-page" data-href="https://www.facebook.com/progressiveengegement/"
+      data-width="540"
+      data-tabs="timeline"
+      data-small-header="true"
+      data-adapt-container-width="true"
+      data-hide-cover="true"
+      data-show-facepile="false">
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/progressiveengegement/">
+          <a href="https://www.facebook.com/progressiveengegement/">The OPEN</a>
+        </blockquote>
       </div>
-      <div class="tw-feed">
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/michaelsnook/lists/open-network" data-widget-id="661531868307689472">Tweets from https://twitter.com/michaelsnook/lists/open-network</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-      <a name="about"></a>
-      <h2>About our member organisations</h2>
-      {% for org in site.orgs %}
-        {% cycle '<div class="row">','' %}
-          <div class="col-sm-6 col-lg-6">
-          <a name="{{ org.slug }}"></a>
-          {% if org.logo %}<img class="img-responsive" src="{{ org.logo }}" alt="{{ org.title }}" />{% endif %}
-          <h3>{{ org.title }}
-            <span class="small">
-              <a href="{{ org.url }}" title="{{ org.title }}">{{ org.url }}</a>
-            </span>
-          </h3>
-          <p>{{ org.description|striptags }}</p>
-        </div>
-
-      {% cycle '','</div><!-- row -->' %}
-      {% endfor %}
-      {% if site.orgs | size | modulo: 2 %}</div><!-- row -->{% endif %}
-
-      <a name="features"></a>
-
-      <h2>Feature stories about the groups</h2>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="tw-feed">
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/michaelsnook/lists/open-network" data-widget-id="661531868307689472">Tweets from https://twitter.com/michaelsnook/lists/open-network</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div>
+<hr>
+<a name="features"></a>
+<h2>Feature Stories</h2>
