@@ -61,7 +61,7 @@ orgs:
 - slug: leadnow
   code: CAN
   url: http://www.leadnow.ca/
-  logo:
+  logo: /static/img/leadnow.png
   coordinates: '[-123.1207, 49.2827]'
   title: Leadnow
   description: '<a target="_blank" href="http://www.leadnow.ca/">Leadnow.ca</a> is Canada&rsquo;s leading online progressive advocacy group, with over 500,000 members. Founded in 2011 and focusing heavily on local leadership development, they have quickly become one of the most powerful voices on the left. In 2015 they ran the country&rsquo;s largest and most successful strategic voting campaign to defeat Stephen Harper.'
@@ -69,7 +69,7 @@ orgs:
 - slug: moveon
   code: USA
   url: http://www.moveon.org/
-  logo:
+  logo: https://s3.amazonaws.com/s3.moveon.org/moui/img/assets/moveon-demaction.svg
   coordinates: '[-98.5, 39.8]'
   title: MoveOn
   description: '<a target="_blank" href="http://www.moveon.org/">MoveOn.org</a> is the oldest and largest of the groups in the OPEN network. Founded in 1998, and with over 8 million members, they are the flagship organization among the robust American ecosystem of online, independent left organizations in America. MoveOn was one of the leading voices in opposing the Iraq war, passing ObamaCare, and stopping a senseless war with Iran.'
@@ -77,7 +77,7 @@ orgs:
 - slug: 38degrees
   code: GBR
   url: http://38degrees.org.uk/
-  logo:
+  logo: /static/img/38degrees.png
   coordinates: '[-0.12775, 51.50735]'
   title: 38 Degrees
   description: '<a target="_blank" href="http://38degrees.org.uk/">38Degrees.org.uk</a> is the largest OPEN organization per capita, with over 12% of the UK&rsquo;s voting population in their membership. They focus heavily on their distributed campaigns platform, CampaignsByYou, which has proven effective at elevating citizen voices to fight austerity at the local level, saving dozens of hospitals and libraries, while building a new model for local campaigning.'
@@ -85,7 +85,7 @@ orgs:
 - slug: campact
   code: DEU
   url: http://campact.de/
-  logo:
+  logo: https://www.campact.de/s/img/logo.png
   coordinates: '[13.40495, 52.52]'
   title: Campact
   description: '<a target="_blank" href="http://campact.de/">Campact.de</a> was the first organisation in the network to begin without any contact with the others, only linking up in 2013 when OPEN was founded. Though they are a multi-issue organisation like all the rest, they focus heavily on anti-coal, anti-nuclear, anti-GMO campaigns, which has led them to become one of Europe&rsquo;s leading voices against bad trade deals, and a key part of coordinating transnational campaigns.'
@@ -93,7 +93,7 @@ orgs:
 - slug: getup
   code: AUS
   url: http://getup.org.au/
-  logo:
+  logo: /static/img/getup.png
   coordinates: '[149.12868, -35.28199]'
   title: GetUp
   description: '<a target="_blank" href="http://getup.org.au/">GetUp.org.au</a> is known for taking on big fights and training some of the world&rsquo;s best online campaigners. Having just celebrated their 10th anniversary, GetUp marshalls over one million members to fight one of the world&rsquo;s most destructive coal-mining projects, end for-profit detention centers for assylum-seekers, and campaign for economic justice.'

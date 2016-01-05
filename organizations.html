@@ -2,28 +2,53 @@
 layout: sidebar
 class: second
 add_facebook: true
-title: Our Member Organisations
+title: OPEN Member Organisations
 ---
 <a name="about"></a>
-<h2>Who They Are</h2>
+<h2>Founding Organisations</h2>
+<p>The the OPEN Network was founded in 2013, the five organisations who came together to create this network have been around for years longer, with the first group founding in 1998, and others coming along in 2003, 2006, 2009, and 2011. OPEN&rsquo;s founding organisations now represent 1 out of every 15 voters in their respective countries.</p>
 {% for org in site.orgs %}
-  {% cycle '<div class="row">','' %}
-    <div class="col-sm-6 col-lg-6">
-    <a name="{{ org.slug }}"></a>
-    {% if org.logo %}<img class="img-responsive" src="{{ org.logo }}" alt="{{ org.title }}" />{% endif %}
-    <h3>{{ org.title }}
-      <span class="small">
-        <a href="{{ org.url }}" title="{{ org.title }}">{{ org.url }}</a>
-      </span>
-    </h3>
-    <p>{{ org.description|striptags }}</p>
-  </div>
-{% cycle '','</div><!-- row -->' %}
+  {% if org.category == 'core' %}
+    {% include orgblurb.html %}
+  {% endif %}
 {% endfor %}
-{% if site.orgs | size | modulo: 2 %}</div><!-- row -->{% endif %}
+
+{% comment %}
+<h2>Full Members</h2>
+<p>Organisations that are established along the same guiding principals as OPEN&rsquo;s founding organisations, which reach a certain threshold of membership size, organisational maturity and financial stability, can be considered for full membership, and are admitted based on a vote of our Core Group, which is made up of representatives from the other member organisations.</p>
+
+{% for org in site.orgs %}
+  {% if org.category == 'full' %}
+    {% include orgblurb.html %}
+  {% endif %}
+{% endfor %}
+{% endcomment %}
+
+<h2>Startup Organisations</h2>
+<p>Startups are groups that have just recently launched and typically have only a few full-time staff, or a team working part-time to get the organisation off the ground. They benefit from many of the same programs as full members, and get additional coaching on organisational development from OPEN staff and other leaders around the Network.</p>
+
+{% for org in site.orgs %}
+  {% if org.category == 'startup' %}
+    {% include orgblurb.html %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+<h2>Pre-Launch Organisations</h2>
+<p>Pre-Launch Organisations are groups we&rsquo;re working with to help them get started. A successful launch means having a team with executive leadership, a plan for how this organisation will make an impact, a legal entity, fundraising capabilities, and the technology and tools needed to organise. Groups on this list are either coming soon, or have just launched, and are awaiting recognition from the Core Group to move into the &ldquo;Startup&rdquo; cohort.</p>
+
+{% for org in site.orgs %}
+  {% if org.category == 'prelaunch' %}
+    {% include orgblurb.html %}
+  {% endif %}
+{% endfor %}
+{% endcomment %}
 
 <hr>
 <h2>Defining an OPEN Organisation</h2>
+<p>Each OPEN organization is completely autonomous and adapts methodology to match the unique
+context. However, all OPEN groups share eight common ways of working: a common DNA that
+allows them to work as a coherent and productive network.</p>
 <h3>Progressive</h3>
 <p>OPEN members move society
 towards greater economic and social equality,
