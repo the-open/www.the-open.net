@@ -5496,6 +5496,11 @@ body {
   max-height: 80px;
   max-width: 200px; }
 
+.four-strands {
+  width: 120px;
+  margin-right: 15px;
+  margin-bottom: 1em; }
+
 span.flag:before {
   content: " "; }
 

@@ -16,7 +16,7 @@ body { position: relative; } // for scrollspy
 .show-now { background-color: green !important; }
 .hide-sibs { background-color: gray !important; }
 .org-logo { margin: 1em 0 10px 15px; max-height: 80px; max-width: 200px; }
-
+.four-strands { width: 120px; margin-right: 15px; margin-bottom: 1em;}
 span.flag:before { content: " "; }
 h1 { color: $gray; } h3 { color: $gray-dark; }
 body > section, body > header {
