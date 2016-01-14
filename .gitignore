@@ -1,2 +1,6 @@
 _site
 .sass-cache
+
+# temporary
+vimeo.html
+_world.yaml
