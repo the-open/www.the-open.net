@@ -1,5 +1,5 @@
 var orgs = [
-  {% for org in site.orgs %}
+  {% for org in site.data.orgs %}
   {
     type: 'Feature',
     geometry: {
