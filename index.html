@@ -96,7 +96,10 @@ class: second
 <script>
 
 {% include orgs.js %}
-var world = {% include world.json %};
+var world = {
+  "type": "FeatureCollection",
+  "features": {% include countryshapes.json %}
+};
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic25vb2siLCJhIjoiY2loN2Z4OXlhMHE4c3Vla3RiYjUzOHAxMSJ9.etz4qL0ffKTyPf2bFcHOIA';
 var map1 = L.mapbox.map('map1', 'mapbox.streets', {
