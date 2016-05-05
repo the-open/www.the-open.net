@@ -1257,7 +1257,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center, body#second section.more .feature {
+.text-center, section.more .feature {
   text-align: center; }
 
 .text-justify {
@@ -1313,17 +1313,17 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #953b39; }
 
-.bg-primary, body#second .bg-green, body#second .bg-red, body#second .bg-orange {
+.bg-primary, .bg-green, .bg-red, .bg-orange {
   color: #fff; }
 
-.bg-primary, body#second .bg-green, body#second .bg-red, body#second .bg-orange {
+.bg-primary, .bg-green, .bg-red, .bg-orange {
   background-color: #0090d0; }
 
-a.bg-primary:hover, body#second a.bg-green:hover, body#second a.bg-red:hover, body#second a.bg-orange:hover,
+a.bg-primary:hover, a.bg-green:hover, a.bg-red:hover, a.bg-orange:hover,
 a.bg-primary:focus,
-body#second a.bg-green:focus,
-body#second a.bg-red:focus,
-body#second a.bg-orange:focus {
+a.bg-green:focus,
+a.bg-red:focus,
+a.bg-orange:focus {
   background-color: #006d9d; }
 
 .bg-success {
@@ -1340,20 +1340,20 @@ a.bg-info:hover,
 a.bg-info:focus {
   background-color: #afd9ee; }
 
-.bg-warning, body#second .bg-orange {
+.bg-warning, .bg-orange {
   background-color: #fcf8e3; }
 
-a.bg-warning:hover, body#second a.bg-orange:hover,
+a.bg-warning:hover, a.bg-orange:hover,
 a.bg-warning:focus,
-body#second a.bg-orange:focus {
+a.bg-orange:focus {
   background-color: #f7ecb5; }
 
-.bg-danger, body#second .bg-red {
+.bg-danger, .bg-red {
   background-color: #f2dede; }
 
-a.bg-danger:hover, body#second a.bg-red:hover,
+a.bg-danger:hover, a.bg-red:hover,
 a.bg-danger:focus,
-body#second a.bg-red:focus {
+a.bg-red:focus {
   background-color: #e4b9b9; }
 
 .page-header {
@@ -2728,32 +2728,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
     color: #0090d0;
     background-color: #fff; }
 
-.btn-success, body#second .bg-green .btn-white {
+.btn-success, .bg-green .btn-white {
   color: #fff;
   background-color: #a4c82c;
   border-color: #a4c82c; }
-  .btn-success:focus, body#second .bg-green .btn-white:focus, .btn-success.focus, body#second .bg-green .focus.btn-white {
+  .btn-success:focus, .bg-green .btn-white:focus, .btn-success.focus, .bg-green .focus.btn-white {
     color: #fff;
     background-color: #829e23;
     border-color: #4e5f15; }
-  .btn-success:hover, body#second .bg-green .btn-white:hover {
+  .btn-success:hover, .bg-green .btn-white:hover {
     color: #fff;
     background-color: #829e23;
     border-color: #7b9621; }
-  .btn-success:active, body#second .bg-green .btn-white:active, .btn-success.active, body#second .bg-green .active.btn-white, .open > .btn-success.dropdown-toggle, body#second .bg-green .open > .dropdown-toggle.btn-white {
+  .btn-success:active, .bg-green .btn-white:active, .btn-success.active, .bg-green .active.btn-white, .open > .btn-success.dropdown-toggle, .bg-green .open > .dropdown-toggle.btn-white {
     color: #fff;
     background-color: #829e23;
     border-color: #7b9621; }
-    .btn-success:active:hover, body#second .bg-green .btn-white:active:hover, .btn-success:active:focus, body#second .bg-green .btn-white:active:focus, .btn-success:active.focus, body#second .bg-green .btn-white:active.focus, .btn-success.active:hover, body#second .bg-green .active.btn-white:hover, .btn-success.active:focus, body#second .bg-green .active.btn-white:focus, .btn-success.active.focus, body#second .bg-green .active.focus.btn-white, .open > .btn-success.dropdown-toggle:hover, body#second .bg-green .open > .dropdown-toggle.btn-white:hover, .open > .btn-success.dropdown-toggle:focus, body#second .bg-green .open > .dropdown-toggle.btn-white:focus, .open > .btn-success.dropdown-toggle.focus, body#second .bg-green .open > .dropdown-toggle.focus.btn-white {
+    .btn-success:active:hover, .bg-green .btn-white:active:hover, .btn-success:active:focus, .bg-green .btn-white:active:focus, .btn-success:active.focus, .bg-green .btn-white:active.focus, .btn-success.active:hover, .bg-green .active.btn-white:hover, .btn-success.active:focus, .bg-green .active.btn-white:focus, .btn-success.active.focus, .bg-green .active.focus.btn-white, .open > .btn-success.dropdown-toggle:hover, .bg-green .open > .dropdown-toggle.btn-white:hover, .open > .btn-success.dropdown-toggle:focus, .bg-green .open > .dropdown-toggle.btn-white:focus, .open > .btn-success.dropdown-toggle.focus, .bg-green .open > .dropdown-toggle.focus.btn-white {
       color: #fff;
       background-color: #6a811c;
       border-color: #4e5f15; }
-  .btn-success:active, body#second .bg-green .btn-white:active, .btn-success.active, body#second .bg-green .active.btn-white, .open > .btn-success.dropdown-toggle, body#second .bg-green .open > .dropdown-toggle.btn-white {
+  .btn-success:active, .bg-green .btn-white:active, .btn-success.active, .bg-green .active.btn-white, .open > .btn-success.dropdown-toggle, .bg-green .open > .dropdown-toggle.btn-white {
     background-image: none; }
-  .btn-success.disabled, body#second .bg-green .disabled.btn-white, .btn-success.disabled:hover, body#second .bg-green .disabled.btn-white:hover, .btn-success.disabled:focus, body#second .bg-green .disabled.btn-white:focus, .btn-success.disabled.focus, body#second .bg-green .disabled.focus.btn-white, .btn-success.disabled:active, body#second .bg-green .disabled.btn-white:active, .btn-success.disabled.active, body#second .bg-green .disabled.active.btn-white, .btn-success[disabled], body#second .bg-green [disabled].btn-white, .btn-success[disabled]:hover, body#second .bg-green [disabled].btn-white:hover, .btn-success[disabled]:focus, body#second .bg-green [disabled].btn-white:focus, .btn-success[disabled].focus, body#second .bg-green [disabled].focus.btn-white, .btn-success[disabled]:active, body#second .bg-green [disabled].btn-white:active, .btn-success[disabled].active, body#second .bg-green [disabled].active.btn-white, fieldset[disabled] .btn-success, fieldset[disabled] body#second .bg-green .btn-white, body#second .bg-green fieldset[disabled] .btn-white, fieldset[disabled] .btn-success:hover, fieldset[disabled] body#second .bg-green .btn-white:hover, body#second .bg-green fieldset[disabled] .btn-white:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] body#second .bg-green .btn-white:focus, body#second .bg-green fieldset[disabled] .btn-white:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] body#second .bg-green .focus.btn-white, body#second .bg-green fieldset[disabled] .focus.btn-white, fieldset[disabled] .btn-success:active, fieldset[disabled] body#second .bg-green .btn-white:active, body#second .bg-green fieldset[disabled] .btn-white:active, fieldset[disabled] .btn-success.active, fieldset[disabled] body#second .bg-green .active.btn-white, body#second .bg-green fieldset[disabled] .active.btn-white {
+  .btn-success.disabled, .bg-green .disabled.btn-white, .btn-success.disabled:hover, .bg-green .disabled.btn-white:hover, .btn-success.disabled:focus, .bg-green .disabled.btn-white:focus, .btn-success.disabled.focus, .bg-green .disabled.focus.btn-white, .btn-success.disabled:active, .bg-green .disabled.btn-white:active, .btn-success.disabled.active, .bg-green .disabled.active.btn-white, .btn-success[disabled], .bg-green [disabled].btn-white, .btn-success[disabled]:hover, .bg-green [disabled].btn-white:hover, .btn-success[disabled]:focus, .bg-green [disabled].btn-white:focus, .btn-success[disabled].focus, .bg-green [disabled].focus.btn-white, .btn-success[disabled]:active, .bg-green [disabled].btn-white:active, .btn-success[disabled].active, .bg-green [disabled].active.btn-white, fieldset[disabled] .btn-success, fieldset[disabled] .bg-green .btn-white, .bg-green fieldset[disabled] .btn-white, fieldset[disabled] .btn-success:hover, fieldset[disabled] .bg-green .btn-white:hover, .bg-green fieldset[disabled] .btn-white:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .bg-green .btn-white:focus, .bg-green fieldset[disabled] .btn-white:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .bg-green .focus.btn-white, .bg-green fieldset[disabled] .focus.btn-white, fieldset[disabled] .btn-success:active, fieldset[disabled] .bg-green .btn-white:active, .bg-green fieldset[disabled] .btn-white:active, fieldset[disabled] .btn-success.active, fieldset[disabled] .bg-green .active.btn-white, .bg-green fieldset[disabled] .active.btn-white {
     background-color: #a4c82c;
     border-color: #a4c82c; }
-  .btn-success .badge, body#second .bg-green .btn-white .badge {
+  .btn-success .badge, .bg-green .btn-white .badge {
     color: #a4c82c;
     background-color: #fff; }
 
@@ -4492,7 +4492,7 @@ button.list-group-item-danger {
 .embed-responsive-4by3 {
   padding-bottom: 75%; }
 
-.well, .half-well, body#second section.coordinate .campaign-list {
+.well, .half-well, section.coordinate .campaign-list {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -4501,7 +4501,7 @@ button.list-group-item-danger {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
-  .well blockquote, .half-well blockquote, body#second section.coordinate .campaign-list blockquote {
+  .well blockquote, .half-well blockquote, section.coordinate .campaign-list blockquote {
     border-color: #ddd;
     border-color: rgba(0, 0, 0, 0.15); }
 
@@ -5593,10 +5593,10 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, body > footer ul
   margin-top: 0;
   margin-bottom: 0.5em; }
 
-.well.case-study, .case-study.half-well, body#second section.coordinate .case-study.campaign-list {
+.well.case-study, .case-study.half-well, section.coordinate .case-study.campaign-list {
   min-height: 140px;
   color: #0090d0; }
-  .well.case-study:hover, .case-study.half-well:hover, body#second section.coordinate .case-study.campaign-list:hover {
+  .well.case-study:hover, .case-study.half-well:hover, section.coordinate .case-study.campaign-list:hover {
     color: #E3E3E3;
     background-color: #0090d0; }
 
@@ -5690,78 +5690,92 @@ section#first {
   background-color: rgba(245, 245, 245, 0.65);
   border: 1px solid rgba(227, 227, 227, 0.65); }
 
-body#second #map1, body#second #map2 {
+#map1, #map2 {
   height: 100vh;
   width: 100%; }
   @media (min-width: 768px) {
-    body#second #map1, body#second #map2 {
+    #map1, #map2 {
       height: 80vh; } }
-body#second section.overview {
+
+section.overview {
   padding: 0;
   width: 100%;
   position: relative; }
-  body#second section.overview .join-up {
+  section.overview .join-up {
     position: absolute;
     left: 10px;
     bottom: 10px; }
-  body#second section.overview .caveat {
+  section.overview .caveat {
     position: absolute;
     top: 10px;
     left: 40px;
     right: 40px; }
-body#second h1 {
+
+h1 {
   padding: 10px 0 15px; }
-body#second section.coordinate {
+
+section.coordinate {
   padding: 0;
   width: 100%;
   position: relative; }
-  body#second section.coordinate .overlays {
+  section.coordinate .overlays {
     position: absolute;
     top: 30px;
     left: 5%;
     right: 5%;
     z-index: 1;
     height: 70vh; }
-  body#second section.coordinate .campaign-list {
+  section.coordinate .campaign-list {
     width: 180px;
     position: absolute;
     bottom: 0; }
-    .nav-pills body#second section.coordinate .campaign-list li a:hover {
+    .nav-pills section.coordinate .campaign-list li a:hover {
       background-color: #0090d0; }
-body#second section.enhance {
+
+section.enhance {
   min-height: 60vh;
   padding-top: 15vh;
   padding-bottom: 15vh; }
-  body#second section.enhance h1, body#second section.enhance p {
+  section.enhance h1, section.enhance p {
     margin-bottom: 1em;
     color: white; }
-body#second section.grow {
+
+section.grow {
   min-height: 60vh;
   padding-top: 15vh;
   padding-bottom: 15vh; }
-body#second .bg-green {
+
+.bg-green {
   background-color: #7b9621; }
-  body#second .bg-green .btn-white {
+  .bg-green .btn-white {
     background-color: white;
     color: #829e23; }
-body#second section.more .feature h3 {
+
+section.more .feature h3 {
   min-height: 60px; }
-body#second .bg-red, body#second .bg-orange {
+
+.bg-red, .bg-orange {
   padding-left: 2vw;
   padding-right: 2vw; }
-body#second .bg-red {
+
+.bg-red {
   background-color: #930718; }
-body#second .bg-orange {
+
+.bg-orange {
   background-color: #d86027; }
-  body#second .bg-orange h1 {
+  .bg-orange h1 {
     margin-bottom: 0; }
-body#second .h3-sized {
+
+.h3-sized {
   font-size: 26px; }
-body#second .h4-sized {
+
+.h4-sized {
   font-size: 19px; }
-body#second .h5-sized {
+
+.h5-sized {
   font-size: 15px; }
-body#second .bg-primary h1, body#second .bg-green h1, body#second .bg-red h1, body#second .bg-orange h1 {
+
+.bg-primary h1, .bg-green h1, .bg-red h1, .bg-orange h1 {
   color: white; }
 
 /*# sourceMappingURL=site.css.map */
