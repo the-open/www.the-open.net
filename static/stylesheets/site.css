@@ -5746,6 +5746,10 @@ body#second .bg-orange {
   background-color: #d86027; }
 body#second .h3-sized {
   font-size: 26px; }
+body#second .h4-sized {
+  font-size: 19px; }
+body#second .h5-sized {
+  font-size: 15px; }
 body#second .bg-primary h1, body#second .bg-green h1, body#second .bg-red h1, body#second .bg-orange h1 {
   color: white; }
 
