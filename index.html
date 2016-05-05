@@ -49,12 +49,12 @@ layout: home
   <div class="row">
     <div class="col-sm-12 text-center">
       <h1 class="text-center">
-        Connecting <span class="text-muted">This Global Family Of Organisers</span>
+        Connecting this global family of organisers</span>
       </h1>
-      <p>
+      <p class="h4-sized">
         OPEN groups connect year-round to share lessons learnt, cautionary tales and best practices to supercharge every aspect of what we do and how we do it. The combination of shared values, similar practices and almost no institutional competition creates an extremely honest, generous and valuable exchange.
       </p>
-      <p>
+      <p class="h4-sized">
         OPEN network members connect virtually through thousands of messages every month, live web seminars and facilitated learning circles across multiple issue and role cohorts. We gather physically at regular global and regional summits and through international staff exchanges. Over 120 such physical visits have occurred since 2014.
       </p>
     </div>
@@ -68,23 +68,20 @@ layout: home
   <div class="overlays">
     <div class="bg-orange text-center">
       <h1>
-        Collaborating on Common Campaigns
+        Collaborating on common campaigns
       </h1>
-      <p>
-        Many of the biggest challenges OPEN groups face—like climate, trade, refugees, peace and tax justice—are actually global problems that require many national solutions. The OPEN network helps deeply rooted domestic groups combine forces across borders for maximum impact.
-      </p>
     <ul id="campaign-list" class="nav nav-pills nav-stacked campaign-list">
+      <li><a data-campaign="coal">
+        Stop coal
+      </a></li>
       <li><a data-campaign="refugees">
         Refugees welcome
       </a></li>
-      <li><a data-campaign="reef">
-        Save the reef
+      <li><a data-campaign="peace">
+        Stand for peace
       </a></li>
-      <li><a data-campaign="tpp">
-        Stop the TPP
-      </a></li>
-      <li><a data-campaign="ttip">
-        Stop TTIP
+      <li><a data-campaign="trade">
+        Stop bad trade deals
       </a></li>
     </ul>
   </div>
@@ -96,14 +93,18 @@ layout: home
   <div class="row">
     <div class="col-sm-8 text-center col-sm-push-2">
       <h1 class="text-center">
-        Enhancing Our Member Organisations With Tech, Training And Strategic Analysis
+        Enhancing the network with world-class services
       </h1>
-      <p class="h3-sized"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-        We&rsquo;re sorry, this section is full of trade secrets. You&rsquo;ll have to join the network to learn more.
+      <p class="h4-sized">
+        <!--span class="glyphicon glyphicon-lock" aria-hidden="true"></span-->
+        OPEN network members benefit from special access to best-in-class external resources ranging from video production to management coaching. And OPEN&rsquo;s staff of seasoned campaign veterans provide expert training and strategic support where appropriate.
       </p>
-      <button type="button" class="btn btn-white btn-lg" data-toggle="modal" data-target="#myModal">
+      <p class="h4-sized">
+        OPEN also coordinates <strong>collaborative tech development</strong> across the network to innovate the next generation of digital tools for grassroots advocacy. Priority frontiers for this work include unleashing the full organising power of mobile-first platforms &ndash; especially in the Global South &ndash; and turbo-charging campaigns led by local volunteers.
+      </p>
+      <!--button type="button" class="btn btn-white btn-lg" data-toggle="modal" data-target="#myModal">
         Get In Touch
-      </button>
+      </button-->
     </div>
   </div>
 </div>
@@ -115,10 +116,22 @@ layout: home
   <div class="row">
     <div class="col-sm-12 text-center">
       <h1 class="bg-red">
-        Growing The Network By Helping New Organizations Launch And Succeed
+        Growing the family
       </h1>
       <p>
-        Some kind of graph or timeline showing the network grow grow grow.
+        OPEN helps new member organisations start, launch, grow and thrive in key nations around the world in record time.
+      </p>
+      <p>
+        When OPEN launched in 2013, there were five founding organisations following 15 years of linear progress. Three years later, the network has more than tripled. Our priority growth areas are Europe and the Global South.
+      </p>
+      <p>
+        OPEN helps each start-up initiative achieve the high-quality leadership, strategy, technology, funding and institutional foundation they need for success. And the OPEN peer network ensures that every startup begins with the accumulated wisdom of those who have come before.
+      </p>
+      <p>
+        Today, recent OPEN startups across 5 continents are already fighting and winning campaigns on critical issues from air quality in Poland to child poverty in New Zealand to police brutality in South Africa.
+      </p>
+      <p>
+        Innovations in tactics and technology regularly flow from new groups to older groups and back again, accelerating progress for all.
       </p>
     </div>
   </div>
@@ -166,14 +179,14 @@ var campaigns = {
   'refugees': {
     'list': ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ITA','ROU']
   },
-  'reef': {
+  'coal': {
     'list': ['GBR','DEU','AUS']
   },
-  'tpp': {
-    'list': ['USA','CAN','AUS','NZL']
+  'trade': {
+    'list': ['USA','CAN','AUS','NZL','GBR','DEU','IRL','POL','AUT','SWE','CHE','ITA','ROU']
   },
-  'ttip': {
-    'list': ['USA','GBR','DEU','IRL','POL','AUT','SWE','CHE','ITA','ROU']
+  'peace': {
+    'list': ['USA','CAN','NZL','GBR','DEU','CHE','SWE','AUT','IRL']
   }
 };
 var campaignLayers = {};
