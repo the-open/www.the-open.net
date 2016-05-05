@@ -181,6 +181,11 @@ section#first {
     filter: brightness(1.5) grayscale(50%);
   }
 }
+.half-well {
+  @extend .well;
+  background-color: rgba($well-bg, 0.65);
+  border: 1px solid rgba($well-border, 0.65);
+}
 body#second {
   #map1, #map2 {
     height: 100vh;
@@ -197,6 +202,12 @@ body#second {
       position: absolute;
       left: 10px;
       bottom: 10px;
+    }
+    .caveat {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      right: 40px;
     }
   }
   h1 {
@@ -248,7 +259,7 @@ body#second {
       h3 { min-height: 60px; }
     }
   }
-  h1.bg-red, h1.bg-orange {
+  .bg-red, .bg-orange {
     padding-left: 2vw;
     padding-right: 2vw;
   }
@@ -261,6 +272,7 @@ body#second {
     @extend .bg-primary;
     @extend .bg-warning;
     background-color: $btn-warning-border;
+    h1 { margin-bottom: 0; }
   }
   .h3-sized { font-size: $font-size-h3; }
   .h4-sized { font-size: $font-size-h4; }
