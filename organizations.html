@@ -5,8 +5,13 @@ add_facebook: true
 title: OPEN Member Organisations
 ---
 <a name="about"></a>
-<h2>Founding Organisations</h2>
-<p>The the OPEN Network was founded in 2013, the five organisations who came together to create this network have been around for years longer, with the first group founding in 1998, and others coming along in 2003, 2006, 2009, and 2011. OPEN&rsquo;s founding organisations now represent 1 out of every 15 voters in their respective countries.</p>
+<h2>
+  Founding Organisations
+</h2>
+<p>
+  The the OPEN Network was founded in 2013, the five organisations who came together to create this network have been around for years longer, with the first group founding in 1998, and others coming along in 2003, 2006, 2009, and 2011. OPEN&rsquo;s founding organisations now represent 1 out of every 15 voters in their respective countries.
+</p>
+
 {% for org in site.data.orgs %}
   {% if org.category == 'core' %}
     {% include orgblurb.html %}
@@ -14,8 +19,12 @@ title: OPEN Member Organisations
 {% endfor %}
 
 {% comment %}
-<h2>Full Members</h2>
-<p>Organisations that are established along the same guiding principals as OPEN&rsquo;s founding organisations, which reach a certain threshold of membership size, organisational maturity and financial stability, can be considered for full membership, and are admitted based on a vote of our Core Group, which is made up of representatives from the other member organisations.</p>
+<h2>
+  Full Members
+</h2>
+<p>
+  Organisations that are established along the same guiding principals as OPEN&rsquo;s founding organisations, which reach a certain threshold of membership size, organisational maturity and financial stability, can be considered for full membership, and are admitted based on a vote of our Core Group, which is made up of representatives from the other member organisations.
+</p>
 
 {% for org in site.data.orgs %}
   {% if org.category == 'full' %}
@@ -25,8 +34,12 @@ title: OPEN Member Organisations
 {% endcomment %}
 
 <hr>
-<h2>Startup Organisations</h2>
-<p>Startups are groups that have just recently launched and typically have only a few full-time staff, or a team working part-time to get the organisation off the ground. They benefit from many of the same programs as full members, and get additional coaching on organisational development from OPEN staff and other leaders around the Network.</p>
+<h2>
+  Startup Organisations
+</h2>
+<p>
+  Startups are groups that have just recently launched and typically have only a few full-time staff, or a team working part-time to get the organisation off the ground. They benefit from many of the same programs as full members, and get additional coaching on organisational development from OPEN staff and other leaders around the Network.
+</p>
 
 {% for org in site.data.orgs %}
   {% if org.category == 'startup' %}
@@ -36,8 +49,12 @@ title: OPEN Member Organisations
 
 {% comment %}
 <hr>
-<h2>Pre-Launch Organisations</h2>
-<p>Pre-Launch Organisations are groups we&rsquo;re working with to help them get started. A successful launch means having a team with executive leadership, a plan for how this organisation will make an impact, a legal entity, fundraising capabilities, and the technology and tools needed to organise. Groups on this list are either coming soon, or have just launched, and are awaiting recognition from the Core Group to move into the &ldquo;Startup&rdquo; cohort.</p>
+<h2>
+  Pre-Launch Organisations
+</h2>
+<p>
+  Pre-Launch Organisations are groups we&rsquo;re working with to help them get started. A successful launch means having a team with executive leadership, a plan for how this organisation will make an impact, a legal entity, fundraising capabilities, and the technology and tools needed to organise. Groups on this list are either coming soon, or have just launched, and are awaiting recognition from the Core Group to move into the &ldquo;Startup&rdquo; cohort.
+</p>
 
 {% for org in site.data.orgs %}
   {% if org.category == 'prelaunch' %}
@@ -68,7 +85,9 @@ title: OPEN Member Organisations
 
 <hr>
 <a name="feed"></a>
-<h2>What They&rsquo;re Doing Now</h2>
+<h2>
+  What They&rsquo;re Doing Now
+</h2>
 <div class="row">
   <div class="col-md-6">
     <div class="fb-page" data-href="https://www.facebook.com/progressiveengegement/"
