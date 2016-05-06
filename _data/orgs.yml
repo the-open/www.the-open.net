@@ -125,7 +125,7 @@
   url: http://www.aufstehn.at/
   logo: /static/img/aufstehn.png
   coordinates: '[16.37381, 48.20817]'
-  title: '#aufstehn'
+  title: 'Aufstehn'
   description: '<a target="_blank" href="http://www.aufstehn.at/">Aufstehn.at</a> was founded in 2015 and dove straight into the refugee crisis with an inspiring, award-winning campaign to show local support welcoming refugees in cities and townships across the country.'
   category: startup
 - slug: progressi
