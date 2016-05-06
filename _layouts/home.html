@@ -23,7 +23,7 @@
   <script src="/static/scripts/jquery.min.js"></script>
   <script src="/static/scripts/bootstrap.min.js"></script>
 </head>
-<body id="{{ page.class }}">
+<body id="{{ page.class }} {{ page.name|split:".html" }}">
 {% if page.add_facebook %}
 <div id="fb-root"></div>
 
