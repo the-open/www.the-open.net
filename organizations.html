@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 add_facebook: true
-title: OPEN Member Organisations
+title: The OPEN Network
 ---
 <a name="about"></a>
 <h2>
@@ -17,21 +17,6 @@ title: OPEN Member Organisations
   {% endif %}
 {% endfor %}
 
-{% comment %}
-<h2>
-  Full Members
-</h2>
-<p>
-  Organisations that are established along the same guiding principals as OPEN&rsquo;s founding organisations, which reach a certain threshold of membership size, organisational maturity and financial stability, can be considered for full membership, and are admitted based on a vote of our Core Group, which is made up of representatives from the other member organisations.
-</p>
-
-{% for org in site.data.orgs %}
-  {% if org.category == 'full' %}
-    {% include orgblurb.html %}
-  {% endif %}
-{% endfor %}
-{% endcomment %}
-
 <hr>
 <h2>
   Startup Organisations
@@ -45,22 +30,6 @@ title: OPEN Member Organisations
     {% include orgblurb.html %}
   {% endif %}
 {% endfor %}
-
-{% comment %}
-<hr>
-<h2>
-  Pre-Launch Organisations
-</h2>
-<p>
-  Pre-Launch Organisations are groups we&rsquo;re working with to help them get started. A successful launch means having a team with executive leadership, a plan for how this organisation will make an impact, a legal entity, fundraising capabilities, and the technology and tools needed to organise. Groups on this list are either coming soon, or have just launched, and are awaiting recognition from the Core Group to move into the &ldquo;Startup&rdquo; cohort.
-</p>
-
-{% for org in site.data.orgs %}
-  {% if org.category == 'prelaunch' %}
-    {% include orgblurb.html %}
-  {% endif %}
-{% endfor %}
-{% endcomment %}
 
 <hr>
 <h2>Defining an OPEN Organisation</h2>
