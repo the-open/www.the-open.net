@@ -23,48 +23,13 @@
   <script src="/static/scripts/jquery.min.js"></script>
   <script src="/static/scripts/bootstrap.min.js"></script>
 </head>
-<body id="{{ page.class }} {{ page.name|split:".html" }}">
+<body class="{{ page.name|split:".html" }}">
+
 {% if page.add_facebook %}
-<div id="fb-root"></div>
-
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '207341522943149',
-      //pageId     : '869655296485635',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+  {% include fb-init.html %}
 {% endif %}
-
-
-{% if page.add_wrap %}
-<section id="first">
-{% include header.html %}
-</section>
-<section>
-<div class="container"><div class="row"><div class="col-sm-12">
-  <main role="document">
-    {{ content }}
-  </main>
-</div></div></div>
-</section>
-
-{% else %}
 
 {{ content }}
-
-{% endif %}
 
 {% include mailchimp.html %}
 

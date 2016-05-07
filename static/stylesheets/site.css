@@ -5491,6 +5491,12 @@ body {
 .hide-sibs {
   background-color: gray !important; }
 
+.no-margin, .contact h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
 .org-logo {
   margin: 1em 0 10px 15px;
   max-height: 80px;
@@ -5592,6 +5598,8 @@ nav.navbar {
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, body > footer ul.list-unstyled > li > a:first-child, h5:first-child, body > footer p.copyright:first-child, h6:first-child {
   margin-top: 0;
   margin-bottom: 0.5em; }
+  .contact h1:first-child, .contact h2:first-child, .contact h3:first-child, .contact h4:first-child, .contact body > footer ul.list-unstyled > li > a:first-child, body > footer .contact ul.list-unstyled > li > a:first-child, .contact h5:first-child, .contact body > footer p.copyright:first-child, body > footer .contact p.copyright:first-child, .contact h6:first-child {
+    margin-bottom: 0; }
 
 .well.case-study, .case-study.half-well, section.coordinate .case-study.campaign-list {
   min-height: 140px;
