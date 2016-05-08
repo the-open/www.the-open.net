@@ -139,7 +139,7 @@ layout: home
 
 </section>
 
-<section>
+<!--section>
   more sections:
   <ul>
     <li>our own newsletter</li>
@@ -148,12 +148,12 @@ layout: home
     <li>facebook feed</li>
     <li>twitter feed</li>
   </ul>
-</section>
+</section-->
 <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 <script>
 
-{% include orgs.js %}
+var orgs = [{% include orgs.js %}];
 var world = {
   "type": "FeatureCollection",
   "features": {% include countryshapes.json %}

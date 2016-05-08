@@ -1,150 +1,165 @@
-- slug: leadnow
+- title: Leadnow
+  slug: leadnow # do not change
   code: CAN
   code2: ca
   founded:
+  date_launched:
   url: http://www.leadnow.ca/
   logo: /static/img/leadnow.png
   coordinates: '[-123.1207, 49.2827]'
-  title: Leadnow
-  description: '<a target="_blank" href="http://www.leadnow.ca/">Leadnow.ca</a> is Canada&rsquo;s leading online progressive advocacy group, with over 500,000 members. Founded in 2011 and focusing heavily on local leadership development, they have quickly become one of the most powerful voices on the left. In 2015 they ran the country&rsquo;s largest and most successful strategic voting campaign to defeat Stephen Harper.'
+  #description: '<a target="_blank" href="http://www.leadnow.ca/">Leadnow.ca</a> is Canada&rsquo;s leading online progressive advocacy group, with over 500,000 members. Founded in 2011 and focusing heavily on local leadership development, they have quickly become one of the most powerful voices on the left. In 2015 they ran the country&rsquo;s largest and most successful strategic voting campaign to defeat Stephen Harper.'
   category: core
-- slug: moveon
+- title: MoveOn
+  slug: moveon # do not change
   code: USA
   code2: us
-  founded:
+  founded: 1998
+  date_launched: 1998-09-01 # this is just a guess
   url: http://www.moveon.org/
   logo: /static/img/moveon.svg
   coordinates: '[-98.5, 39.8]'
-  title: MoveOn
-  description: '<a target="_blank" href="http://www.moveon.org/">MoveOn.org</a> is the oldest and largest of the groups in the OPEN network. Founded in 1998, and with over 8 million members, they are the flagship organization among the robust American ecosystem of online, independent left organizations in America. MoveOn was one of the leading voices in opposing the Iraq war, passing ObamaCare, and stopping a senseless war with Iran.'
+  #description: '<a target="_blank" href="http://www.moveon.org/">MoveOn.org</a> is the oldest and largest of the groups in the OPEN network. Founded in 1998, and with over 8 million members, they are the flagship organization among the robust American ecosystem of online, independent left organizations in America. MoveOn was one of the leading voices in opposing the Iraq war, passing ObamaCare, and stopping a senseless war with Iran.'
   category: core
-- slug: 38degrees
+- title: 38 Degrees
+  slug: 38degrees # do not change
   code: GBR
   code2: gb
-  founded:
+  founded: 2009
+  date_launched: 2009-06-01 # not accurate
   url: http://38degrees.org.uk/
   logo: /static/img/38degrees.png
   coordinates: '[-0.12775, 51.50735]'
-  title: 38 Degrees
-  description: '<a target="_blank" href="http://38degrees.org.uk/">38Degrees.org.uk</a> is the largest OPEN organization per capita, with over 12% of the UK&rsquo;s voting population in their membership. They focus heavily on their distributed campaigns platform, CampaignsByYou, which has proven effective at elevating citizen voices to fight austerity at the local level, saving dozens of hospitals and libraries, while building a new model for local campaigning.'
+  #description: '<a target="_blank" href="http://38degrees.org.uk/">38Degrees.org.uk</a> is the largest OPEN organization per capita, with over 12% of the UK&rsquo;s voting population in their membership. They focus heavily on their distributed campaigns platform, CampaignsByYou, which has proven effective at elevating citizen voices to fight austerity at the local level, saving dozens of hospitals and libraries, while building a new model for local campaigning.'
   category: core
-- slug: campact
+- title: Campact
+  slug: campact # do not change
   code: DEU
   code2: de
-  founded:
+  founded: 2003
+  date_launched: 2003-06-01 # not accurate
   url: http://campact.de/
   logo: /static/img/campact.png
   coordinates: '[13.40495, 52.52]'
-  title: Campact
-  description: '<a target="_blank" href="http://campact.de/">Campact.de</a> was the first organisation in the network to begin without any contact with the others, only linking up in 2013 when OPEN was founded. Though they are a multi-issue organisation like all the rest, they focus heavily on anti-coal, anti-nuclear, anti-GMO campaigns, which has led them to become one of Europe&rsquo;s leading voices against bad trade deals, and a key part of coordinating transnational campaigns.'
+  #description: '<a target="_blank" href="http://campact.de/">Campact.de</a> was the first organisation in the network to begin without any contact with the others, only linking up in 2013 when OPEN was founded. Though they are a multi-issue organisation like all the rest, they focus heavily on anti-coal, anti-nuclear, anti-GMO campaigns, which has led them to become one of Europe&rsquo;s leading voices against bad trade deals, and a key part of coordinating transnational campaigns.'
   category: core
-- slug: getup
+- title: GetUp
+  slug: getup # do not change
   code: AUS
   code2: au
-  founded:
+  founded: 2006
+  date_launched: 2006-06-01 # not accurate
   url: http://getup.org.au/
   logo: /static/img/getup.png
   coordinates: '[149.12868, -35.28199]'
-  title: GetUp
-  description: '<a target="_blank" href="http://getup.org.au/">GetUp.org.au</a> is known for taking on big fights and training some of the world&rsquo;s best online campaigners. Having just celebrated their 10th anniversary, GetUp marshalls over one million members to fight one of the world&rsquo;s most destructive coal-mining projects, end for-profit detention centers for assylum-seekers, and campaign for economic justice.'
+  #description: '<a target="_blank" href="http://getup.org.au/">GetUp.org.au</a> is known for taking on big fights and training some of the world&rsquo;s best online campaigners. Having just celebrated their 10th anniversary, GetUp marshalls over one million members to fight one of the world&rsquo;s most destructive coal-mining projects, end for-profit detention centers for assylum-seekers, and campaign for economic justice.'
   category: core
-- slug: actionstation
+- title: ActionStation
+  slug: actionstation # do not change
   code: NZL
   code2: nz
-  founded:
+  founded: 2013 # check this
+  date_launched: 2013-06-01 # not accurate
   url: http://actionstation.org.nz/
   logo: /static/img/actionstation.png
   coordinates: '[174.77623, -41.28646]'
-  title: ActionStation
-  description: '<a target="_blank" href="http://actionstation.org.nz/">ActionStation.org.nz</a> has over 100,000 Kiwis working for social justice, human rights, and climate justice in Aotearoa. Recent highlights include campaigning against the TPPA (another bad trade deal), and for the government to address sexual violence as a serious problem facing the country.'
+  #description: '<a target="_blank" href="http://actionstation.org.nz/">ActionStation.org.nz</a> has over 100,000 Kiwis working for social justice, human rights, and climate justice in Aotearoa. Recent highlights include campaigning against the TPPA (another bad trade deal), and for the government to address sexual violence as a serious problem facing the country.'
   category: startup
-- slug: uplift
+- title: Uplift
+  slug: uplift # do not change
   code: IRL
   code2: ie
-  founded:
+  founded: September 2015 # check this
+  date_launched: 2015-09-01 # Inaccurate
   url: http://uplift.ie/
   logo: /static/img/uplift.png
   coordinates: '[-6.2603, 53.3498]'
-  title: Uplift
-  description: '<a target="_blank" href="http://uplift.ie/">Uplift.ie</a>&rsquo;s 80,000 members work for progressive change in Ireland. Recently they have stood up for refugees, for the Irish fishing industry, against fracking and privatising water supplies.'
+  #description: '<a target="_blank" href="http://uplift.ie/">Uplift.ie</a>&rsquo;s 80,000 members work for progressive change in Ireland. Recently they have stood up for refugees, for the Irish fishing industry, against fracking and privatising water supplies.'
   category: startup
-- slug: operationlibero
+- title: Operation Libero
+  slug: operationlibero # do not change
   code: CHE
   code2: ch
-  founded:
+  founded: September 2015 # check this
+  date_launched: 2015-09-01 # not accurate
   url: http://www.operation-libero.ch/
   logo: /static/img/operationlibero.jpg
   coordinates: '[7.44744, 46.94797]'
-  title: Operation Libero
-  description: '<a target="_blank" href="http://www.operation-libero.ch/">Operation-Libero.ch</a> is a startup, just about a year old. Because Swiss politics centers so much around constitutional referrenda, their approach is inherently social, making civic engagement compelling and fun for a new generation of voices who want create more inclusive, forward-thinking Switzerland.'
+  #description: '<a target="_blank" href="http://www.operation-libero.ch/">Operation-Libero.ch</a> is a startup, just about a year old. Because Swiss politics centers so much around constitutional referrenda, their approach is inherently social, making civic engagement compelling and fun for a new generation of voices who want create more inclusive, forward-thinking Switzerland.'
   category: startup
-- slug: akcjademokracja
+- title: Akcja Demokracja
+  slug: akcjademokracja # do not change
   code: POL
   code2: pl
-  founded:
+  founded: September 2015
+  date_launched: 2015-09-06 # check this
   url: http://www.akcjademokracja.pl/
   logo: /static/img/akcjademokracja.png
   coordinates: '[21.01222, 52.22967]'
-  title: Akcja Demokracja
-  description: '<a target="_blank" href="http://www.akcjademokracja.pl/">AkcjaDemokracja.pl</a> launched in Fall of 2015, just before Poland erupted into protests against government corruption, and saw a new right-wing government sweep into power. They&rsquo;ve already seen viral growth on some of their campaigns, and have been at the center of important fights to defend democracy, combat air pollution, and support working families.'
+  #description: '<a target="_blank" href="http://www.akcjademokracja.pl/">AkcjaDemokracja.pl</a> launched in Fall of 2015, just before Poland erupted into protests against government corruption, and saw a new right-wing government sweep into power. They&rsquo;ve already seen viral growth on some of their campaigns, and have been at the center of important fights to defend democracy, combat air pollution, and support working families.'
   category: startup
-- slug: declic
+- title: De-Clic.ro
+  slug: declic # do not change
   code: ROU
   code2: ro
-  founded:
+  founded: August 2015 # check this
+  date_launched: 2015-08-01 # check this
   url: http://www.de-clic.ro/
   logo: /static/img/declic.png
   coordinates: '[26.10253, 44.42676]'
-  title: de-clic
-  description: '<a target="_blank" href="http://www.de-clic.ro/">de-clic.ro</a> emerged from the leadership of a powerful and successful campaign to protect parks and watersheds from dangerous mining and logging projects. Now, as a multi-issue organisation, they are a crucial part of a small but growing civil society sector in one of Europe&rsquo;s youngest democracies.'
+  #description: '<a target="_blank" href="http://www.de-clic.ro/">de-clic.ro</a> emerged from the leadership of a powerful and successful campaign to protect parks and watersheds from dangerous mining and logging projects. Now, as a multi-issue organisation, they are a crucial part of a small but growing civil society sector in one of Europe&rsquo;s youngest democracies.'
   category: startup
-- slug: amandla
+- title: amandla.mobi
+  slug: amandla # do not change
   code: ZAF
   code2: za
-  founded:
+  founded: 2012 # inaccurate
+  date_launched: 2012-06-01 # inaccurate
   url: http://www.amandla.mobi/
   logo: /static/img/amandla.png
   coordinates: '[28.0473,-26.2041]'
-  title: amandla.mobi
-  description: '<a target="_blank" href="http://www.amandla.mobi/">Amandla.mobi</a> works to empower South Africa&rsquo;s most marginalized communities, especially black women from rural areas, by turning every cell phone into a tool for democracy. Though they face challenges many of the organizers in the network would never imagine, they manage to run inspiring campaigns against state violence and for the rights of workers and students, they do it in four languages on both web and mobile platforms, and they win!'
+  #description: '<a target="_blank" href="http://www.amandla.mobi/">Amandla.mobi</a> works to empower South Africa&rsquo;s most marginalized communities, especially black women from rural areas, by turning every cell phone into a tool for democracy. Though they face challenges many of the organizers in the network would never imagine, they manage to run inspiring campaigns against state violence and for the rights of workers and students, they do it in four languages on both web and mobile platforms, and they win!'
   category: startup
-- slug: skiftet
+- title: Skiftet
+  slug: skiftet # do not change
   code: SWE
   code2: se
-  founded:
+  founded: 2015
+  date_launched: 2015-06-01
   url: http://www.skiftet.org/
   logo: /static/img/skiftet.svg
   coordinates: '[18.06858, 59.32932]'
-  title: Skiftet
-  description: '<a target="_blank" href="http://www.skiftet.org/">Skiftet.org</a> is just over a year old, but already they count over 3% of the electorate in their membership. Having formed out of the leadership of a lefty blogging outfit, their tone tends toward the irreverent, but their campaigns are serious, taking on Monsanto, climate change, human rights, and equity in the education system.'
+  #description: '<a target="_blank" href="http://www.skiftet.org/">Skiftet.org</a> is just over a year old, but already they count over 3% of the electorate in their membership. Having formed out of the leadership of a lefty blogging outfit, their tone tends toward the irreverent, but their campaigns are serious, taking on Monsanto, climate change, human rights, and equity in the education system.'
   category: startup
-- slug: aufstehn
+- title: Aufstehn
+  slug: aufstehn # do not change
   code: AUT
   code2: at
-  founded:
+  founded: November 2015 # check this
+  date_launched: 2015-11-01 # not accurate
   url: http://www.aufstehn.at/
   logo: /static/img/aufstehn.png
   coordinates: '[16.37381, 48.20817]'
-  title: 'Aufstehn'
-  description: '<a target="_blank" href="http://www.aufstehn.at/">Aufstehn.at</a> was founded in 2015 and dove straight into the refugee crisis with an inspiring, award-winning campaign to show local support welcoming refugees in cities and townships across the country.'
+  #description: '<a target="_blank" href="http://www.aufstehn.at/">Aufstehn.at</a> was founded in 2015 and dove straight into the refugee crisis with an inspiring, award-winning campaign to show local support welcoming refugees in cities and townships across the country.'
   category: startup
-- slug: progressi
+- title: Progressi
+  slug: progressi # do not change
   code: ITA
   code2: it
-  founded:
+  founded: September 2015
+  date_launched: 2015-09-01
   url: http://www.progressi.org/
   logo: /static/img/progressi.png
   coordinates: '[12.48022, 41.87241]'
-  title: Progressi
-  description: '<a target="_blank" href="http://www.progressi.org/">Progressi.org</a> launched in fall of 2015 with campaigns in support of refugees, for civil marriage equality, and against climate change. They have already launched a distributed campaigns platform, opting for a role more as a steward of citizen campaigns, like <em>38 Degrees</em> and <em>Skiftet</em>, and plan to focus heavily on local leadership development like <em>Leadnow</em>.'
+  #description: '<a target="_blank" href="http://www.progressi.org/">Progressi.org</a> launched in fall of 2015 with campaigns in support of refugees, for civil marriage equality, and against climate change. They have already launched a distributed campaigns platform, opting for a role more as a steward of citizen campaigns, like <em>38 Degrees</em> and <em>Skiftet</em>, and plan to focus heavily on local leadership development like <em>Leadnow</em>.'
   category: startup
-- slug: zazim
+- title: Zazim
+  slug: zazim # do not change
   code: ISR
   code2: il
-  founded:
+  founded: December 2015
+  date_launched: 2015-12-27
   url: http://www.zazim.org.il/
   logo: /static/img/zazim.png
   coordinates: '[35.2137, 31.76831]'
-  title: Zazim
-  description: '<a target="_blank" href="http://www.zazim.org.il/">Zazim.org.il</a> launched in the final days of 2015 with a campaign against new anti-muslim educational policies and textbooks. They operate in Hebrew and Arabic, and while Zazim is a multi-issue organisation, they understand that systemic racism and the occupation play a central roll in skewing or derailing nearly every other political debate in the country, and work to combat these problems in every campaign they run.'
+  #description: '<a target="_blank" href="http://www.zazim.org.il/">Zazim.org.il</a> launched in the final days of 2015 with a campaign against new anti-muslim educational policies and textbooks. They operate in Hebrew and Arabic, and while Zazim is a multi-issue organisation, they understand that systemic racism and the occupation play a central roll in skewing or derailing nearly every other political debate in the country, and work to combat these problems in every campaign they run.'
   category: startup
