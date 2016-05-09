@@ -5,5 +5,4 @@ exclude:
  - CNAME
  - .sass-cache
  - static/img/originals
- - scss
  - .git
