@@ -4,7 +4,7 @@ layout: home
 <section id="first">
 {% include header.html %}
 </section>
-<section id="main">
+<main id="main" role="document">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-8 col-lg-9">
@@ -16,9 +16,7 @@ layout: home
       </div>
     </div>
   </div>
-
-</div>
-</section>
+</main>
 <script src="/static/scripts/site.js"></script>
 <script>
 $(document).ready(function() {
@@ -26,13 +24,12 @@ $(document).ready(function() {
   $('#toc').toc({
     'selectors': 'h2', //,h3,h4,h5', //elements to use as headings
     'listType': '<ul class="nav nav-stacked"><ul/>',
-    'container': 'section#main', //element to find all selectors in
+    'container': 'main#main', //element to find all selectors in
     'prefix': 'toc', //prefix for anchor tags and class names
     'timeout': 20, //scroll delay before recalculating highlight
     'activeClass': 'toc-active',
     'onHighlight': function(el) {
       var $ul = $('#toc > ul');
-
     },
     'highlightOnScroll': true, //add class to heading that is currently in focus
     'highlightOffset': 100, //offset to trigger the next headline

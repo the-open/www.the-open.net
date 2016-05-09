@@ -1,27 +1,17 @@
 ---
-layout: home
-sidebar: true
+layout: wrap
 ---
-<section id="first">
-{% include header.html %}
-</section>
+<div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
+  <form action="//the-open.us8.list-manage.com/subscribe/post?u=753395b9f963c9ea2d6980b7c&amp;id=9e1559c2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-<section>
-  <div class="container">
-  <div class="row">
-    <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
-    <form action="//the-open.us8.list-manage.com/subscribe/post?u=753395b9f963c9ea2d6980b7c&amp;id=9e1559c2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h1>Contact</h1>
 
-      <h1>Contact</h1>
+    <p>Have a question or comment? Want to receive periodic updates about the network? Just fill out the form below.</p>
 
-      <p>Have a question or comment? Want to receive periodic updates about the network? Just fill out the form below.</p>
-      {% include mailchimp-inner.html %}
+    {% include mailchimp-inner.html %}
 
-      <br>
-      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button btn-info btn btn-block" />
+    <br>
+    <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button btn-info btn btn-block" />
 
-    </form>
-    </div>
-  </div><!-- /.row -->
-  </div>
-</section>
+  </form>
+</div>
