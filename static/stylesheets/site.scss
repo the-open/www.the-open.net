@@ -18,6 +18,11 @@ $well-border-stroke: 1px solid $gray-lighter;
 input.btn {
   margin-bottom: 1em;
 }
+img.headshot {
+  width: ($line-height-computed * 5);
+  @extend .img-circle, .img-responsive;
+  margin-right: $line-height-computed / 2;
+}
 body { position: relative; } // for scrollspy
 .show-now { background-color: green !important; }
 .hide-sibs { background-color: gray !important; }
@@ -173,10 +178,6 @@ h6 {
   }
   .navbar-nav > li > a { border-radius: $btn-border-radius-base; }
 }
-.big-learn-more-button {
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
 .modal-footer .btn { margin-bottom: 0; }
 nav.navbar-default { background-color: transparent; }
 section#first {
@@ -218,17 +219,17 @@ section.overview {
   position: relative;
   .join-up {
     position: absolute;
-    left: 10px;
-    bottom: 10px;
+    left: ($line-height-computed / 2);
+    bottom: ($line-height-computed / 2);
   }
   .caveat {
     position: absolute;
-    top: 10px;
-    left: 40px;
-    right: 40px;
+    top: ($line-height-computed / 2);
+    left: ($line-height-computed * 2);
+    right: ($line-height-computed * 2);
   }
 }
-h1 { padding: 10px 0 15px; }
+h1 { padding: ($line-height-computed / 2) 0 15px; }
 section.collaborate {
   padding: 0;
   width: 100%;
