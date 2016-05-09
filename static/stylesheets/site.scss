@@ -51,6 +51,15 @@ body > footer {
     padding-top: 2em; padding-bottom: 2em;
   }
 }
+.carousel-inner {
+  max-height: 500px;
+  .item > .img-responsive { margin: 0 auto; }
+  .container { position: absolute; top: 10px; width: 100%; }
+
+}
+.carousel-control {
+    &.right, &.left { background-image: none; }
+}
 #sidebar {
   display: flex;
   position: static;
