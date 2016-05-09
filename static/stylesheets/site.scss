@@ -237,11 +237,11 @@ section.coordinate {
   position: relative;
   .overlays {
     position: absolute;
-    top: 30px;
+    top: 10px;
+    bottom: 20px;
     left: 5%;
     right: 5%;
     z-index: 1;
-    height: 70vh;
   }
   .campaign-list {
     @extend .well;
@@ -300,5 +300,5 @@ section.more {
 .h3-sized { font-size: $font-size-h3; }
 .h4-sized { font-size: $font-size-h4; }
 .h5-sized { font-size: $font-size-h5; }
-.bg-primary h1 { color: white; } 
+.bg-primary h1 { color: white; }
 .contact h1 { @extend .no-margin; }
