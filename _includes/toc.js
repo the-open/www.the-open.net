@@ -59,9 +59,9 @@ $.fn.toc = function(options) {
     headings.each(function(i, heading) {
       var $h = $(heading);
       headingOffsets.push($h.offset().top - opts.highlightOffset);
-
+      console.log('found heading');
       var anchorName = opts.anchorName(i, heading, opts.prefix);
-
+      console.log(heading);
       //add anchor
       if(heading.id !== anchorName) {
         var anchor = $('<span/>').attr('id', anchorName).insertBefore($h);
@@ -102,8 +102,9 @@ jQuery.fn.toc.defaults = {
   highlightOffset: 50,
   timeout: 50, // scroll delay before recalculating highlight
   anchorName: function(i, heading, prefix) {
-    if(heading.id.length) {
-      return heading.id;
+    console.log(heading);
+    if ($(heading).attr('id').length) {
+      return $(heading).attr('id');
     }
 
     var candidateId = $(heading).text().replace(/[^a-z0-9]/ig, ' ').replace(/\s+/g, '-').toLowerCase();
