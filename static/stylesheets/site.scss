@@ -54,7 +54,7 @@ body > footer {
 .carousel-inner {
   max-height: 500px;
   .item > .img-responsive { margin: 0 auto; }
-  .container { position: absolute; top: 10px; width: 100%; }
+  .container { position: absolute; top: 10px; width: 100%; text-shadow: $carousel-text-shadow; }
 
 }
 .carousel-control {
