@@ -1,4 +1,6 @@
 domainroot: http://v2.the-open.net
+sass:
+  sass_dir: _scss
 exclude:
  - CNAME
  - .sass-cache
