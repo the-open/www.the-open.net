@@ -3,38 +3,8 @@ layout: sidebar
 title: Case Studies of Collaborative Campaigns
 ---
 
-<h2>Defunding Big Coal: Abbot Point and Save Our Reef</h2>
-
-<p><em>(GetUp!, 38 Degrees, Campact)</em></p>
-
-<p>OPEN&rsquo;s Australian affiliate, GetUp, has been running a multi-year campaign to defend the Great Barrier Reef against a massive proposed new coal export facility, called Abbot Point. &nbsp;In 2015, the group exhausted their current domestic political channels. They shifted their campaign to ﬁnanciers of the project. And that&rsquo;s when OPEN&rsquo;s international ties made a whole new level of campaigning possible.</p>
-
-<p>Deutsche Bank, over which Australians have little leverage, was a major funder. OPEN&rsquo;s German member, Campact, stepped up to the plate. Germans and Australians signed a joint petition to Save the Reef and jointly crowd-funded an ad in the German edition of the Financial Times. The ad coincided with a massive petition delivery at the Deutsche Bank Annual General Meeting. The next day, Deutsche Bank announced they were no longer considering funding the Abbot Point project.</p>
-
-<p>Several weeks later, 38 Degrees in the United Kingdom partnered with GetUp. Shortly thereafter, Barclays Bank also took Abbot Point ﬁnancing off the table.</p>
-
-<h2>The People&rsquo;s Climate March: Global Action</h2>
-
-<p>OPEN members supercharged the global plan for a global climate mobilization around UN Climate Summit in September, 2014. OPEN facilitated each member organisation&rsquo;s role. Planning started with a joint strategic mapping exercise. OPEN sponsored a joint staff position with ally 350.org to bring transnational climate expertise to domestic groups.</p>
-
-<p>GetUp took lead responsibility for a 40,000+ person rally in Melbourne. 38 Degrees sent thousands of members to the London rally. MoveOn and Leadnow both organised major boost in turn-out for the ﬂagship event in New York and also drove ﬁrst ever physical climate rally on the United States-Canada border. Even startup groups organised or supported events.</p>
-
-<p>Members were able to seamlessly exchange key mobilization resources, such as core issue messaging, high-performing turn-out email copy, graphics, and ride-sharing technology. OPEN collected images and video from all members and piped them instantly into the global press stream and video projections in New York City.</p>
-
-<h2>Standing Together for Peace: Coordinated Action after Paris and Beruit</h2>
-
-<p>We are shocked, saddened, and in deep mourning after the terrorist attacks in Paris. We stand in solidarity with the victims&#39; families, friends, and loved ones.</p>
-
-<p>We express the same solidarity to all of the victims of ISIS across the world, including those in Ankara, Beirut, Syria, and Iraq, and to all of the refugees forced to flee their homes to escape the very terror that hit Paris.&nbsp;</p>
-
-<p>Today, we stand together for peace. We stand together for libert&eacute;, &eacute;galit&eacute;, fraternit&eacute;.</p>
-
-<p>These words, backed by 542,044 signatures and 11 OPEN member organisations, ran in Le Monde on November 23.</p>
-
-<p>Earlier that month, OPEN European member organisations and a pan-European ally, WeMove, took part in a training on values-based campaigning at the OPEN European Executive Directors&rsquo; Summit.&nbsp;</p>
-
-<p>Days later, the attacks in Paris and Beirut happened.</p>
-
-<p>The groups quickly designed a petition in response, asking members to sign on to the message. Soon MoveOn in the US, Leadnow in Canada and Action Station in New Zealand joined in as well. 38 Degrees in the UK, Campact in Germany, and MoveOn funded the ad, WeMove designed it, and groups shared email language that went out to millions.</p>
-
-<p>As emotions ran high across the world, OPEN groups responded quickly and decisively as an international community. Their members affirmed their values and presented an international message of compassion and peace.</p>
+{% for story in site.case-studies %}
+<h2>{{ story.title }} <span class="small">{{ story.datestring }}</h2>
+<p><em>{{ story.orgs }}</em></p>
+{{ story.content }}
+{% endfor %}

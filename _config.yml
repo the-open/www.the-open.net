@@ -1,8 +1,8 @@
 domainroot: http://v2.the-open.net
 
 collections:
-  staff:
-    output: true
+- staff
+- case-studies
 
 sass:
   sass_dir: _scss
