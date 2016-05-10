@@ -244,6 +244,7 @@ section.collaborate {
   }
   .campaign-list {
     @extend .well;
+    padding: 0;
     width: 180px;
     position: absolute;
     bottom: 0;

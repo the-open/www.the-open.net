@@ -10,7 +10,8 @@ var world = {
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic25vb2siLCJhIjoiY2loN2Z4OXlhMHE4c3Vla3RiYjUzOHAxMSJ9.etz4qL0ffKTyPf2bFcHOIA';
 var map1 = L.mapbox.map('map1', 'mapbox.streets', {
-  scrollWheelZoom: false
+  scrollWheelZoom: false,
+  attribution: 'The OPEN'
 }).setView([20, 0], 2);
 var map2 = L.mapbox.map('map2', 'mapbox.streets', {
   scrollWheelZoom: false,
@@ -25,18 +26,11 @@ pins.on('click',function(e) {
 
 var sampleArray = ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ZAF','COL','VEN','ITA','ROU'];
 var campaigns = {
-  'refugees': {
-    'list': ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ITA','ROU']
-  },
-  'coal': {
-    'list': ['GBR','DEU','AUS']
-  },
-  'trade': {
-    'list': ['USA','CAN','AUS','NZL','GBR','DEU','IRL','POL','AUT','SWE','CHE','ITA','ROU']
-  },
-  'peace': {
-    'list': ['USA','CAN','NZL','GBR','DEU','CHE','SWE','AUT','IRL']
-  }
+{% for story in site.case_studies %}
+  '{{ story.slug }}': {
+    'list': {{ story.map_countries }}
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}
 };
 var campaignLayers = {};
 $(document).ready(function() {

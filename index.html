@@ -74,18 +74,11 @@ layout: home
         Collaborating on Common Campaigns
       </h1>
     <ul id="campaign-list" class="nav nav-pills nav-stacked campaign-list">
-      <li><a data-campaign="coal">
-        Stop coal
+      {% for story in site.case_studies %}
+      <li><a data-campaign="{{ story.slug }}">
+      {{ story.short }}
       </a></li>
-      <li><a data-campaign="refugees">
-        Refugees welcome
-      </a></li>
-      <li><a data-campaign="peace">
-        Stand for peace
-      </a></li>
-      <li><a data-campaign="trade">
-        Stop bad trade deals
-      </a></li>
+      {% endfor %}
     </ul>
   </div>
 </section>

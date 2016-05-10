@@ -1,7 +1,9 @@
 ---
 title: 'The People’s Climate March: Global Action'
+short: 'People’s Climate March'
 datestring: Summer 2015
-orgs: MoveOn, GetUp, 38 Degrees, ActionStation, Uplift
+orgs: MoveOn, Campact, GetUp, 38 Degrees, Leadnow, ActionStation, Uplift, Skiftet
+map_countries: "['USA','CAN','GBR','DEU','IRL','SWE','AUS','NZL']"
 ---
 
 OPEN members supercharged the global plan for a global climate mobilization around UN Climate Summit in September, 2014. OPEN facilitated each member organisation’s role. Planning started with a joint strategic mapping exercise. OPEN sponsored a joint staff position with ally 350.org to bring transnational climate expertise to domestic groups.
