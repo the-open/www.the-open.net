@@ -24,29 +24,32 @@ pins.on('click',function(e) {
   map1.panTo(e.layer.getLatLng());
 });
 
-var sampleArray = ['USA','CAN','GBR','DEU','IRL','POL','AUT','SWE','CHE','AUS','NZL','ZAF','COL','VEN','ITA','ROU'];
+var sampleArray = ['USA','CAN','GBR','DEU','IRL','POL','AUT','ISR','SWE','CHE','AUS','NZL','ZAF','COL','VEN','ITA','ROU'];
 var campaigns = {
 {% for story in site.case_studies %}
   '{{ story.slug }}': {
     'list': {{ story.map_countries }}
-  }{% if forloop.last == false %},{% endif %}
+  },
 {% endfor %}
+  'sample': {
+    'list': sampleArray
+  }
 };
 var campaignLayers = {};
 $(document).ready(function() {
-$.each(campaigns, function(name, list) {
-  campaignLayers[name] = L.mapbox.featureLayer(world, {
-    style: { weight: 2, fillOpacity: '0' },
-    //className: 'country-tpp',
-    filter: function(feature, layer) { if(campaigns[name].list.indexOf(feature.id) != -1) return true; return false;}
-  }).setZIndex(-1).addTo(map2);
-});
-$('#campaign-list > li > a').on('mouseover', function(){
-  campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 1});
-});
-$('#campaign-list > li > a').on('mouseout', function(){
-  campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 0});
-});
+  $.each(campaigns, function(name, list) {
+    campaignLayers[name] = L.mapbox.featureLayer(world, {
+      style: { weight: 2, fillOpacity: '0.2' },
+      //className: 'country-tpp',
+      filter: function(feature, layer) { if(campaigns[name].list.indexOf(feature.id) != -1) return true; return false;}
+    }).setZIndex(-1).addTo(map2);
+  });
+  $('#campaign-list > li > a').on('mouseover', function(){
+    campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 1});
+  });
+  $('#campaign-list > li > a').on('mouseout', function(){
+    campaignLayers[this.dataset.campaign].setStyle({fillOpacity: 0});
+  });
 });
 
 </script>
