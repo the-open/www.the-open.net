@@ -2,7 +2,7 @@
 title: 'Defunding Big Coal: Abbot Point and Save Our Reef'
 short: Save the Reef
 slug: abbot-point
-datestring: 'Somemonth, 20??s'
+datestring: #'Somemonth, 20??s'
 orgs: GetUp, 38 Degrees, Campact
 map_countries: "['GBR','DEU','AUS']"
 ---

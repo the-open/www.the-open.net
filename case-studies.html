@@ -4,7 +4,7 @@ title: Case Studies of Collaborative Campaigns
 ---
 
 {% for story in site.case_studies %}
-<h2>{{ story.title }} <span class="small">{{ story.datestring }}</h2>
-<p><em>{{ story.orgs }}</em></p>
+<h2>{{ story.title }} <span class="small">{{ story.datestring }}</span></h2>
+{% if story.orgs %}<p><em>{{ story.orgs }}</em></p>{% endif %}
 {{ story.content }}
 {% endfor %}

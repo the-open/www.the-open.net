@@ -2,7 +2,7 @@
 title: 'The People’s Climate March: Global Action'
 short: 'People’s Climate March'
 slug: peoples-climate-march
-datestring: Summer 2015
+datestring: Summer and Fall 2015
 orgs: MoveOn, Campact, GetUp, 38 Degrees, Leadnow, ActionStation, Uplift, Skiftet
 map_countries: "['USA','CAN','GBR','DEU','IRL','SWE','AUS','NZL']"
 ---

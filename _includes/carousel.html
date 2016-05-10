@@ -5,7 +5,8 @@
   <ol class="carousel-indicators">
     {% for slide in site.data.carousel %}
     <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"
-      {% if forloop.index0 == 0 %}class="active"{% endif %}></li>
+      {% if forloop.index0 == 0 %}class="active"{% endif %}>
+    </li>
     {% endfor %}
   </ol>
   <div class="carousel-inner" role="listbox">
