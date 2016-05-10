@@ -2,6 +2,7 @@
 title: 'Defunding Big Coal: Abbot Point and Save Our Reef'
 datestring: 'Somemonth, 20??s'
 orgs: GetUp, 38 Degrees, Campact
+map_countries: "['GBR','DEU','AUS']"
 ---
 
 OPEN’s Australian affiliate, GetUp, has been running a multi-year campaign to defend the Great Barrier Reef against a massive proposed new coal export facility, called Abbot Point. In 2015, the group exhausted their current domestic political channels. They shifted their campaign to financiers of the project. And that’s when OPEN’s international ties made a whole new level of campaigning possible.
