@@ -1,6 +1,7 @@
 ---
 title: 'The People’s Climate March: Global Action'
 short: 'People’s Climate March'
+slug: peoples-climate-march
 datestring: Summer 2015
 orgs: MoveOn, Campact, GetUp, 38 Degrees, Leadnow, ActionStation, Uplift, Skiftet
 map_countries: "['USA','CAN','GBR','DEU','IRL','SWE','AUS','NZL']"
@@ -14,7 +15,7 @@ climate expertise to domestic groups.
 
 GetUp took lead responsibility for a 40,000+ person rally in Melbourne. 38
 Degrees sent thousands of members to the London rally. MoveOn and Leadnow both
-organised major boost in turn-out for the flagship event in New York and also 
+organised major boost in turn-out for the flagship event in New York and also
 drove first ever physical climate rally on the United States-Canada border. Even
 startup groups organised or supported events.
 

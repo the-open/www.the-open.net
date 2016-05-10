@@ -1,6 +1,7 @@
 ---
 title: 'Standing Together for Peace: Coordinated Action after Paris and Beirut'
 short: Stand for Peace
+slug: stand-for-peace
 datestring: 2016
 orgs: lots
 map_countries: "['USA','CAN','NZL','GBR','DEU','CHE','SWE','AUT','IRL']"
