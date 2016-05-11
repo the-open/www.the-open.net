@@ -6,8 +6,8 @@
   },
   properties: {
     title: '{{ org.title }}',
-    description: '{% if org.logo %}<img src="{{ org.logo }}" alt="{{ org.title }}" /><br />{% endif %}{{ org.description }}',
+    description: '{% if org.logo %}<img src="{{ org.logo }}" alt="{{ org.title }}" /><br />{% endif %}{{ org.description }}<br><a target="_blank" href="{{ org.url }}">{{ org.url }}</a>',
     category: '{{ org.category }}'
   }
-}{% if forloop.last == false %},{% endif %}
+}{% unless forloop.last %},{% endunless %}
 {% endfor %}

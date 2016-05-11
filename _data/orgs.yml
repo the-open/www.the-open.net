@@ -6,7 +6,7 @@
   founded:
   date_launched:
   url: http://www.leadnow.ca/
-  logo: /static/img/leadnow.png
+  logo: '/static/img/leadnow.png'
   coordinates: '[-123.1207, 49.2827]'
   description: Leadnow.ca was founded in 2011 and organises over 500,000 Canadians.
   #description: '<a target="_blank" href="http://www.leadnow.ca/">Leadnow.ca</a> is Canada’s leading online progressive advocacy group, with over 500,000 members. Founded in 2011 and focusing heavily on local leadership development, they have quickly become one of the most powerful voices on the left. In 2015 they ran the country’s largest and most successful strategic voting campaign to defeat Stephen Harper.'
@@ -21,7 +21,7 @@
   url: http://www.moveon.org/
   logo: /static/img/moveon.svg
   coordinates: '[-98.5, 39.8]'
-  description: MoveOn.org was founded in 1998 and has over 8 million members.
+  description: MoveOn.org was founded in 1998 and has millions of members across the United States.
   #description: '<a target="_blank" href="http://www.moveon.org/">MoveOn.org</a> is the oldest and largest of the groups in the OPEN network. Founded in 1998, and with over 8 million members, they are the flagship organisation among the robust American ecosystem of online, independent left organisations in America. MoveOn was one of the leading voices in opposing the Iraq war, passing ObamaCare, and stopping a senseless war with Iran.'
   category: core
 - title: 38 Degrees
@@ -34,7 +34,7 @@
   url: http://38degrees.org.uk/
   logo: /static/img/38degrees.png
   coordinates: '[-0.12775, 51.50735]'
-  description: 38 Degrees was founded in 2009 and has over 4 million members, over 12% of the UK electorate.
+  description: 38 Degrees was founded in 2009 and has millions of members in the UK.
   #description: '<a target="_blank" href="http://38degrees.org.uk/">38Degrees.org.uk</a> is the largest OPEN organisation per capita, with over 12% of the UK’s voting population in their membership. They focus heavily on their distributed campaigns platform, CampaignsByYou, which has proven effective at elevating citizen voices to fight austerity at the local level, saving dozens of hospitals and libraries, while building a new model for local campaigning.'
   category: core
 - title: Campact
@@ -151,7 +151,7 @@
   url: http://www.skiftet.org/
   logo: /static/img/skiftet.svg
   coordinates: '[18.06858, 59.32932]'
-  description: Skiftet launched in summer 2014.
+  description: Skiftet launched in the fall of 2014.
   #description: '<a target="_blank" href="http://www.skiftet.org/">Skiftet.org</a> is just over a year old, but already they count over 3% of the electorate in their membership. Having formed out of the leadership of a lefty blogging outfit, their tone tends toward the irreverent, but their campaigns are serious, taking on Monsanto, climate change, human rights, and equity in the education system.'
   category: startup
 - title: Aufstehn

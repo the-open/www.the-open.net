@@ -95,7 +95,7 @@ title: About OPEN
 {% for person in site.data.staff %}
 <h3>{{ person.name }} <span class="small">{{ person.location }}</span></h3>
 <p class="aside"><em>{{ person.title }}, {{ person.email }}</em></p>
-<p>
+<p class="clearfix">
   {% if person.img_src %}
     <img src="/static/img/{{ person.img_src }}" class="headshot pull-left">
   {% endif %}
