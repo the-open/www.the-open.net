@@ -7,8 +7,8 @@
   date_launched:
   url: http://www.leadnow.ca/
   logo: '/static/img/leadnow.png'
-  coordinates: '[-123.1207, 49.2827]'
-  description: Leadnow.ca was founded in 2011 and organises over 500,000 Canadians.
+  coordinates: '[-75.6972, 45.4215]'
+  description: Leadnow.ca was founded in 2011 and has over half a million members across Canada.
   #description: '<a target="_blank" href="http://www.leadnow.ca/">Leadnow.ca</a> is Canada’s leading online progressive advocacy group, with over 500,000 members. Founded in 2011 and focusing heavily on local leadership development, they have quickly become one of the most powerful voices on the left. In 2015 they ran the country’s largest and most successful strategic voting campaign to defeat Stephen Harper.'
   category: core
 - title: MoveOn
