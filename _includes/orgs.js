@@ -6,7 +6,9 @@
   },
   properties: {
     title: '{{ org.title }}',
-    description: '{% if org.logo %}<img src="{{ org.logo }}" alt="{{ org.title }}" /><br />{% endif %}{{ org.description }}<br><a target="_blank" href="{{ org.url }}">{{ org.url }}</a>',
+    image: '{{ org.logo }}',
+    description: //'{% if org.logo %}<img src="{{ org.logo }}" alt="{{ org.title }}" /><br />{% endif %}
+      '{{ org.description }}<br><a target="_blank" href="{{ org.url }}">{{ org.url }}</a>',
     category: '{{ org.category }}'
   }
 }{% unless forloop.last %},{% endunless %}
