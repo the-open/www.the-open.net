@@ -3,7 +3,7 @@ title: 'Standing Together for Peace: Coordinated Action after Paris and Beirut'
 short: Stand for Peace
 slug: stand-for-peace
 datestring: November 2015
-orgs: lots
+orgs: 
 map_countries: "['USA','CAN','NZL','GBR','DEU','CHE','SWE','AUT','IRL']"
 ---
 
