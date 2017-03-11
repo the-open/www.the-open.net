@@ -75,7 +75,7 @@
   coordinates: '[174.77623, -41.28646]'
   description: ActionStation was founded in 2014 and has over 100,000 members.
   #description: '<a target="_blank" href="http://actionstation.org.nz/">ActionStation.org.nz</a> has over 100,000 Kiwis working for social justice, human rights, and climate justice in Aotearoa. Recent highlights include campaigning against the TPPA (another bad trade deal), and for the government to address sexual violence as a serious problem facing the country.'
-  category: startup
+  category: core
 - title: Uplift
   title_accent: Uplift.ie
   slug: uplift # do not change
@@ -88,20 +88,7 @@
   coordinates: '[-6.2603, 53.3498]'
   description: Uplift.ie was founded in 2015 and has over 100,000 members.
   #description: '<a target="_blank" href="http://uplift.ie/">Uplift.ie</a>’s 80,000 members work for progressive change in Ireland. Recently they have stood up for refugees, for the Irish fishing industry, against fracking and privatising water supplies.'
-  category: startup
-- title: Operation Libero
-  title_accent: Operation Libero
-  slug: operationlibero # do not change
-  code: CHE
-  code2: ch
-  founded: September 2015 # check this
-  date_launched: 2015-09-01 # not accurate
-  url: http://www.operation-libero.ch/
-  logo: /static/img/operationlibero.jpg
-  coordinates: '[7.44744, 46.94797]'
-  description: Operation Libero was founded in 2015 and has over 50,000 members.
-  #description: '<a target="_blank" href="http://www.operation-libero.ch/">Operation-Libero.ch</a> is a startup, just about a year old. Because Swiss politics centers so much around constitutional referrenda, their approach is inherently social, making civic engagement compelling and fun for a new generation of voices who want create more inclusive, forward-thinking Switzerland.'
-  category: startup
+  category: core
 - title: Akcja Demokracja
   title_accent: AkcjaDemokracja.pl
   slug: akcjademokracja # do not change
@@ -153,7 +140,7 @@
   coordinates: '[18.06858, 59.32932]'
   description: Skiftet launched in the Fall of 2014.
   #description: '<a target="_blank" href="http://www.skiftet.org/">Skiftet.org</a> is just over a year old, but already they count over 3% of the electorate in their membership. Having formed out of the leadership of a lefty blogging outfit, their tone tends toward the irreverent, but their campaigns are serious, taking on Monsanto, climate change, human rights, and equity in the education system.'
-  category: startup
+  category: core
 - title: Aufstehn
   title_accent: '#Aufstehn'
   slug: aufstehn # do not change
