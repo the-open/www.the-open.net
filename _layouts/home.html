@@ -13,7 +13,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="{{ site.data.meta.fb_site_name }}"/>
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.meta.fb_description }}{% endif %}" />
-  <meta property="og:url" content="{{ site.domainroot }}" />
+  <meta property="og:url" content="{{ site.domainroot }}{% if page.name == "index.html" %}{% else %}/{{ page.path | split:"." | first }}{% endif %}" />
   <meta property="og:image" content="{{ site.domainroot }}{% if page.image %}{{ page.image }}{% else %}/static/img/splash.jpg{% endif %}"/>
   <link rel="image_src" href="{% if page.image %}{{ page.image }}{% else %}/static/img/splash.jpg{% endif %}" />
   <link rel="shortcut icon" type="image/png" href="/favicon.png" />
@@ -23,7 +23,7 @@
   <script src="/static/scripts/jquery.min.js"></script>
   <script src="/static/scripts/bootstrap.min.js"></script>
 </head>
-<body class="{{ page.name|split:".html" }}">
+<body class="{{ page.name | split:"." | first }}">
 
 {% if page.add_facebook %}
   {% include fb-init.html %}
