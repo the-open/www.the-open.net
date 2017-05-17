@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 title: Job Openings
+description: Come work with us! OPEN is a young and growing association of the world's leading and most promising progressive, national, digital campaigning organizations.
 ---
 
 Development & Program Officer
