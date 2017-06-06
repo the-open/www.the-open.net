@@ -180,3 +180,15 @@
   description: Zazim launched in late 2015.
   #description: '<a target="_blank" href="http://www.zazim.org.il/">Zazim.org.il</a> launched in the final days of 2015 with a campaign against new anti-muslim educational policies and textbooks. They operate in Hebrew and Arabic, and while Zazim is a multi-issue organisation, they understand that systemic racism and the occupation play a central roll in skewing or derailing nearly every other political debate in the country, and work to combat these problems in every campaign they run.'
   category: startup
+- title: Campax
+  title_accent: Campax
+  slug: campax
+  code: CHE
+  code2: ch
+  founded: ''
+  date_launched: ''
+  url: https://www.campax.org
+  coordinates: '[8.55, 47.36667]'
+  logo: /static/img/campax.png
+  description: Campax joined the OPEN network in 2017.
+  category: startup
