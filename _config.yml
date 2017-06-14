@@ -11,3 +11,5 @@ exclude:
  - .sass-cache
  - static/img/originals
  - .git
+ - .gitignore
+ - .ruby-version
