@@ -2,18 +2,20 @@
 layout: sidebar
 add_facebook: true
 title: The OPEN Network
+editing_notes: "Most of this page is editable as HTML, but the org descriptions are available only under Collections > Data > Orgs."
 ---
 <a name="about"></a>
-<h2 id="founding">
+<h2 id="founding" class="editable">
   Full Member Organisations
 </h2>
+<div class="editable">
 <p>
   In 2013 the original five member organisations gathered together for the first time. Recognizing the enormous potential for further collaboration, they came together to launch the OPEN Network.
 </p>
 <p>
   The membership of these five founding organisations combined is equivalent to one out of every 15 voters in their country’s federal elections.
 </p>
-
+</div>
 {% for org in site.data.orgs %}
   {% if org.category == 'core' %}
     {% include orgblurb.html %}
@@ -21,16 +23,17 @@ title: The OPEN Network
 {% endfor %}
 
 <hr>
-<h2 id="startup">
+<h2 id="startup" class="editable">
   Startup Organisations
 </h2>
+<div class="editable">
 <p>
   OPEN’s new class of startup organisations are leaping forward at a record pace. They are leveraging small staffs and budgets to mobilize tens to hundreds of thousands of supporters, with most already scoring national wins mere months after launch. Meet a few of the startups making change around the globe.
 </p>
 <p>
   <em>(Note: the OPEN network is growing rapidly and now includes some groups facing political repression. Therefore, this site does not reflect all current member organisations.)</em>
 </p>
-
+</div>
 {% for org in site.data.orgs %}
   {% if org.category == 'startup' %}
     {% include orgblurb.html %}
@@ -39,8 +42,8 @@ title: The OPEN Network
 
 <hr>
 
-<h2 id="shared-dna">Shared Strategic DNA</h2>
-
+<h2 id="shared-dna" class="editable">Shared Strategic DNA</h2>
+<div class="editable">
 <p>Each OPEN organisation is completely autonomous and adapts methodology to match the unique context. However, all OPEN groups share eight common ways of working: a common DNA that allows them to work as a coherent and productive network.</p>
 <h3>Progressive</h3>
 <p>OPEN members move society towards greater economic and social equality, environmental sustainability, peaceful coexistence, and democratic freedom. OPEN groups do not demand adherence from all members on all points. They weave a values-coherent community through many different topical campaign opportunities, allowing campaigns to cross-pollinate organically.
@@ -58,10 +61,10 @@ title: The OPEN Network
 <p> OPEN groups remain fiercely independent from any political party. Praise or criticism, support or opposition, are granted purely on the basis of issue performance. This independence also means that OPEN organisations must ultimately be financially beholden only to the members themselves through small individual contributions. All five founding OPEN organisations achieved this mark within 3.5 years of launch.</p>
 <h3>Digital</h3>
 <p> OPEN organisations communicate and organise digitally because digital technology allows for accessible, scalable, and rapid engagement. They prioritize investing in the best possible platforms and innovation. At the same time, each new tool is evaluated from the perspective of strategic utility and accessibility to individual members, who are generally not early adopters. </p>
-
+<div class="editable">
 <hr>
 <a name="feed"></a>
-<h2 id="doing-now">
+<h2 id="doing-now" class="editable">
   What They’re Doing Now
 </h2>
 <div class="row">
