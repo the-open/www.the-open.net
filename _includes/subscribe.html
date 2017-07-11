@@ -1,0 +1,19 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <form method="post" id="embedded-subscribe-form" name="embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Have a question or comment? Want to receive periodic updates about the network? Just fill out the form below.</h4>
+      </div>
+      <div class="modal-body">
+        {% include subscribe-inner.html %}
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <input type="button" class="btn btn-default" data-dismiss="modal" value="Close" />
+        <input type="submit" value="Submit" name="subscribe" id="embedded-subscribe" class="button btn-info btn" />
+      </div>
+    </div><!-- /.modal-content -->
+    </form>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

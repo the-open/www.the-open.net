@@ -1,0 +1,27 @@
+<script>
+ $("form.subscribe-form").validate();
+ $("form.subscribe-form").submit(function(event) {
+   event.preventDefault();
+   var formData = {
+     api_token: "923075a7d88ecdd795de317568545f5111af78f73b801a38b100476b7b13e19b8edabd0536198b6e856c36527f1b14625c3196d990837b46097ab8b98ee5b910",
+     first_name: $(this).find("#first_name").val(),
+     last_name: $(this).find("#last_name").val(),
+     email: $(this).find("#email").val(),
+     phone_number: $(this).find("#phone_number").val(),
+     address: {
+       country: $(this).find("#country").val()
+     }
+   };
+   if ($(this).valid()) {
+     $.post("https://id.the-open.net/api/subscriptions/new", JSON.stringify(formData), function(data) {
+       if ($("#myModal").is(':visible')) {
+         $("#myModal").modal('hide');
+       }
+       $("#thank-you-modal").modal('show');
+       $.each($("form.subscribe-form"), function(index, form) {
+         form.reset();
+       });
+     }, "json");
+   }
+ });
+</script>

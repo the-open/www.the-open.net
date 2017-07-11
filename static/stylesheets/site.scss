@@ -302,3 +302,5 @@ section.more {
 .h5-sized { font-size: $font-size-h5; }
 .bg-primary h1 { color: white; }
 .contact h1 { @extend .no-margin; }
+
+label.error { color: red; }
