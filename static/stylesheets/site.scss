@@ -303,4 +303,8 @@ section.more {
 .bg-primary h1 { color: white; }
 .contact h1 { @extend .no-margin; }
 
-label.error { color: red; }
+label.has-warning {
+  color: $brand-danger;
+  font-weight: normal;
+  font-size: 1.5rem;
+}

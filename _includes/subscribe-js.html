@@ -1,5 +1,16 @@
 <script>
-  $("form.subscribe-form").validate();
+  $("form.subscribe-form").validate({
+    validClass: 'has-success',
+    errorClass: 'has-warning',
+    highlight: function(element, errorClass, validClass) {
+      $(element).closest('.form-group').removeClass(validClass)
+        .addClass(errorClass);
+    },
+    unhighlight: function(element, errorClass, validClass) {
+      $(element).closest('.form-group').removeClass(errorClass)
+        .addClass(validClass);
+    }
+  });
   $("form.subscribe-form").submit(function(event) {
     event.preventDefault();
     var formData = {
