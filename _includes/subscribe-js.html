@@ -1,6 +1,6 @@
 <script>
   $("form.subscribe-form").validate({
-    validClass: 'has-success',
+    validClass: 'has-error',
     errorClass: 'has-warning',
     highlight: function(element, errorClass, validClass) {
       $(element).closest('.form-group').removeClass(validClass)
@@ -23,7 +23,7 @@
         country: $(this).find("#country").val()
       }
     };
-    if ($(this).valid()) {
+    if ($(this).valid() && $(this).find('[name=b_753395b9f963c9ea2d6980b7c_9e1559c2f0]').val() === '') {
       $.post("https://id.the-open.net/api/subscriptions/new", JSON.stringify(formData), function(data) {
         if ($("#myModal").is(':visible')) {
           $("#myModal").modal('hide');
